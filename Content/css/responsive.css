@@ -1,0 +1,1494 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) { 
+ .mainmenu ul li ul li a {
+	padding: 4px 20px;
+} 
+
+}
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+.mainmenu ul li a {
+  padding: 9px;
+  font-size: 15px;
+}
+.mainmenu {
+  padding-top: 6px;
+}
+.header-right {
+  text-align: left;
+  font-size: 14px;
+}
+.header-right a {
+  padding: 0 11px;
+}
+.language-selector {
+	width: 48px;
+}
+.search-icon-header {
+	margin: 0px 2px;
+}
+.language-selector .header-flug {
+	padding-right: 0;
+}
+.slider-bottom-menu ul li a {
+  margin-right: 13px;
+  width: 100px;
+}
+.post-review-stars {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.post-review-stars, .post-day-count, .post-review-count {
+  font-size: 14px;
+}
+.single-sea-tours-text {
+  padding: 20px 15px;
+}
+.weekend-europe-area {
+  padding-bottom: 200px;
+}
+.client-image-box {
+  width: 70px;
+  height: 70px;
+  left: 20px;
+  top: 40px;
+}
+.client-name-text h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.client-name-text {
+  font-size: 14px;
+  padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.footer-widget.pink-icon-widget {
+  font-size: 15px;
+}
+.footer-widget.pink-icon-widget ul li i {
+  margin-right: 10px;
+}
+.header-top-left a {
+	font-size: 13px;
+	padding-right: 25px;
+}
+.single-f-destination-box {
+	width: 95px;
+}
+.welcome-area.hp2-welcome-area .header-area, .welcome-area.hp2-welcome-area .header-area a {
+	font-size: 12px;
+} 
+.welcome-area.hp2-welcome-area .header-area .mainmenu {
+	padding-top: 10px;
+}
+.section-title-hp2 h1, .world-out-there-left h1 {
+	font-size: 34px;
+}
+.section-title-hp2 h1::after, .world-out-there-left h1::after {
+	bottom: 10px;
+}
+.footer-widget {
+	font-size: 15px;
+}
+.footer-widget.pink-icon-widget {
+	font-size: 14px;
+}
+.best-tour-packages-top-hp3-inner h2 {
+	font-size: 25px;
+}
+.need-travel-help, .why-book-us {
+	padding: 20px 25px;
+}
+.team-member-image, .team-person-image {
+	width: 219px;
+	height: 219px;
+}
+.team-member-socials {
+	padding: 10px;
+}
+.car-list-top-form-inner input {
+	font-size: 13px;
+}
+.car-list-top-form-inner button.pink-btn {
+	padding: 14px 20px;
+}
+.car-list-single-box-text a.pink-btn {
+	width: 70%;
+	padding: 15px 47px;
+}
+.car-share-btn {
+	width: 30%;
+}
+.car-list-single-box {
+	min-height: 590px;
+}
+.car-list-top-form-inner .nice-select {
+	padding: 7px 15px;
+	font-size: 13px;
+}
+.shop-details-gallery .owl-dots div {
+	width: 125px;
+	height: 90px;
+	margin-left: 15px;
+}
+.shop-details-bottom-menu ul li:hover {
+	border-bottom: 2px solid #d82460;
+}
+.contact-info-box {
+	font-size: 14px;
+}
+.error-page-content-area-v2 .error-page-content::after {
+	width: 215px;
+	height: 81%;
+	right: 50px;
+	top: 45px;
+	background-size: cover;
+}
+.login-via-btn i.zmdi {
+	left: 70px;
+}
+.login-form-div label {
+	font-size: 15px;
+}
+.slider-area-hp1 .owl-dots {
+	padding-right: 9%;
+}
+.slicknav_menu {
+    display:none;
+}
+.welcome-to-travel-inner-right::after {
+	right: 115px;
+}
+.welcome-to-travel-inner-left {
+	padding-bottom: 0px;
+}
+.welcome-to-travel-inner-left p span.big-letter {
+	top: -30px;
+}
+.welcome-to-travel-inner-left p span:nth-child(3) {
+	padding-left: 0;
+}
+.holiday-packages-item-text {
+	padding: 30px 15px 55px 15px;
+}
+.team-member-image {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+.team-member-carousel-about .owl-prev {
+	left: -15px;
+}
+.team-member-carousel-about .owl-next {
+	right: -15px;
+}
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+.header-right{text-align: left;}
+ .slicknav_menu {
+    display:block;
+}
+.slider-bottom-menu ul li a {
+	padding: 8px;
+	width: 75px;
+	margin-right: 10px;
+	font-size: 15px;
+}
+    .mainmenu{display: none;}
+
+.header-right.header-right-hp3 {
+	width: 80%;
+}
+.header-right.header-right-hp3 button[type="submit"] {
+	left: 370px;right: auto;
+}
+.s-bottom-form input,.s-bottom-form .nice-select {
+  font-size: 13px;
+  padding: 13px 20px;
+}
+.s-bottom-form .nice-select {
+  padding: 5px 20px;
+}
+.s-bottom-form button[type="submit"] {
+	width: auto;
+	padding: 15px 70px;
+}
+.single-top-destination-item {
+  margin-bottom: 30px;
+}
+.top-destination-columns.padding-bottom {
+  padding-bottom: 70px;
+}
+.post-day-count {
+  display: block;
+}
+.post-review-stars {
+  margin-left: 0;
+}
+.weekend-europe-area {
+	padding-bottom: 170px;
+}
+
+.single-counter-up-item {
+  font-size: 15px;
+  padding: 15px;
+  min-height: 180px;
+}
+.single-counter-up-item h1 {
+	font-size: 30px;
+	margin: 15px 0;
+}
+.footer-widget {
+  margin-bottom: 30px;
+}
+.footer-area.section-padding {
+  padding-bottom: 70px;
+}
+.single-sea-tours-text {
+	padding: 20px 15px;
+}
+.section-padding{padding: 50px 0}
+.padding-top{padding-top: 50px;}
+.padding-bottom{padding-bottom: 50px;}
+.team-member-image {
+  margin: 0 auto;
+}
+.single-team-member {
+  margin-bottom: 50px;
+}
+.team-members-area.padding-bottom {
+  padding-bottom: 0;
+}
+.best-for-clients-single-item {
+	margin-bottom: 50px;
+}
+.aboutus-page-content-area.section-padding {
+	padding-bottom: 0;
+}
+.welcome-to-travel-inner::before {
+	right: 0px;
+	top: 70px;
+	width: 43%;
+	height: 40%;
+}
+.welcome-to-travel-inner::after {
+	right: 15%;
+	top: 30%;
+	width: 30%;
+	height: 32%;
+}
+.single-top-destination-item {
+	margin-bottom: 50px;
+}
+.top-destination-columns.padding-bottom {
+	padding-bottom: 0;
+}
+.team-single-details-left,.car-details-address,.car-details-right-sidebar-single.car-details-map h3 {
+	margin-bottom: 50px;
+}
+ .car-details-right-sidebar-single.car-details-map h3{
+	margin-top: 50px;
+}
+.flight-details-gray-widget {
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+.shop-page-content-area.section-padding {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.contact-us-right-area h3 {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.car-list-top-form-inner div {
+	margin-right: 2%;
+	width: 49%;
+	margin-bottom: 20px;
+}
+.car-list-top-form-inner button.pink-btn {
+  margin-top: 0;
+}
+
+.car-list-top-form-inner .car-list-submit {
+	float: left;
+	overflow: hidden;
+	margin-left: 0;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+.car-list-top-form-inner div {
+  margin-right: 1%;
+  margin-left: 1%;
+}
+.car-list-top-form-inner .car-list-adults,.car-list-top-form-inner .car-list-check-in {
+  margin-right: 0;
+}
+.car-list-top-form-inner .car-list-check-out,.car-list-top-form-inner .car-list-find,.car-list-top-form-inner .car-list-child {
+  margin-left: 0;
+}
+.car-list-top-form-inner .car-list-child {
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+}
+.car-list-single-box-text a.pink-btn {
+	width: 60%;
+	text-align: center;
+}
+.car-share-btn {
+	width: 40%;
+}
+
+.car-details-right-sidebar-single {
+	width: 48%;
+	float: left;
+	margin-right: 4%;
+}
+.flight-booking-page-area .car-details-right-sidebar-single.car-details-booking {
+	margin-right: 0;
+}
+
+.car-details-right-sidebar .car-details-right-sidebar-single:last-child {
+  margin-right: 0;
+}
+.car-details-right-sidebar-single h3 {
+  margin-top: 50px;
+}
+
+.car-list-top-form-inner.flight-list-form-inner div {
+  width: 49%;
+  margin-right: 2%;
+}
+.car-list-top-form-inner.flight-list-form-inner div.car-list-adults {
+  margin-left: 0;
+}
+.flight-list-form-inner .car-list-check-in {
+  margin-left: 0;
+  margin-right: 2%;
+}
+ .car-list-top-form-inner.flight-list-form-inner div.car-list-check-in,.car-list-top-form-inner.flight-list-form-inner div.car-list-submit {margin-left: 0;margin-right: 0;}
+.car-list-top-form-inner.flight-list-form-inner div.car-list-submit{margin-top: 0;}
+.booking-page-content-area.car-booking-page-area .car-details-right-sidebar-single:last-child {
+	margin-right: 0;
+}
+
+.hotel-list-page-content-area .car-list-top-form-inner {
+}
+.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-destination {
+  margin-left: 0;
+}
+.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-adventure {
+  margin-right: 0;
+}
+.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-counter1 {
+  margin-left: 0;
+}
+.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-counter2 {
+  margin-right: 0;
+}
+.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-button {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.hotel-list-page-content-area .car-list-top-form-inner .nice-select {
+  width: 100%;
+}
+.shop-details-top-right {
+	margin-top: 50px;
+}
+.login-via-btn i.zmdi {
+	left: 280px;
+}
+.error-page-content-v2 {
+	padding-right: 300px;
+}
+.page-title-menu {
+	position: absolute;
+	right: auto;
+	top: 65%;
+	margin-top: -14px;
+	width: 100%;
+	text-align: center;
+}
+.slider-area-hp1 .owl-dots {
+	padding-right: 13%;
+}
+.slider-bottom-form-carousel-area-hp1 {
+	margin-top: 50px;
+}
+.blog-sidebar-content {
+	margin-top: 0;
+}
+.header-top-right.text-right {
+	text-align: center;
+	margin-top: 20px;
+}
+.hp2-form-area-inner {
+	margin-top: -100px;
+}
+
+.hp2-form-area-inner .hp2-form-single-div {
+  width: 49%;
+  margin-right: 2%;
+}
+.hp2-form-area-inner .hp2-form-single-div.hp2-form-single-adventure {
+  margin-right: 0;
+}
+.hp2-form-area-inner .hp2-form-single-div.hp2-form-single-counter2 {
+  margin-right: 0;
+}
+.hp2-form-area-inner .hp2-form-single-div.hp2-form-single-button button.pink-btn {
+  margin-top: 25px;
+}
+.hp2-form-area-inner {
+  min-height: 400px;
+}
+.best-for-clients-columns.hp2-area-bg.section-padding-hp2 {
+	padding-bottom: 0;
+}
+.section-padding-hp2{padding: 50px 0}
+.padding-top-hp2{padding-top: 50px;}
+.padding-bottom-hp2{padding-bottom: 0}
+.holiday-packages-left-item.padding-top {
+	padding-top: 0;
+}
+.destinations-honeymoon-area.hp2-area-bg.section-padding-hp2,.footer-area.hp2-footer-area .footer-top-area {
+	padding-bottom: 0;
+}
+.world-out-there-left,.popular-destinations-hp3-left,.destinations-honeymoon-single-item  {
+	margin-bottom: 50px;
+}
+.header-top-area-hp3 .header-right {
+	font-size: 14px;
+	margin-top: 20px;
+}
+.header-right.header-right-hp3 {
+	margin-bottom: 15px;
+}
+.hp3-slider-inner-text h1 {
+	font-size: 63px;
+}
+
+.blog-medium-area-hp3 .single-blog-mediun-grid {
+  margin-bottom: 50px;
+}
+.blog-medium-area-hp3.blog-medium-grid-area.padding-bottom {
+  padding-bottom: 0;
+}
+.section-title-hp3.section-title-best-tour.section-padding {
+	padding-top: 46px;
+	padding-bottom: 20px;
+}
+    .best-tour-packages-area-hp3.padding-bottom {
+	padding-bottom: 30px;
+}
+.popular-destinations-hp3-area.section-padding {
+	padding-bottom: 35px;
+}
+.padding-bottom.footer-top-area {
+	padding-bottom: 25px;
+}
+.happy-client-single-item {
+	margin-bottom: 92px;
+}
+.footer-top-area .section-title.section-padding {
+	margin-bottom: 15px;
+}
+.single-counter-up-item-image {
+	height: 50px;
+}
+.single-counter-up-item h1 {
+	margin-bottom: 7px;
+}
+.single-counter-up-item {
+	min-height: 165px;
+}
+.footer-top-area {
+	margin-top: -85px;
+}
+.sea-tours-columns.padding-bottom {
+	padding-bottom: 0;
+}
+.slider-bottom-gallery-hp1 .owl-dots {
+	bottom: -55px;
+}
+    .slider-bottom-gallery-hp1 .owl-nav{top: 100%;}
+    .slider-bottom-gallery-hp1 .owl-prev{left: 10px}
+    .slider-bottom-gallery-hp1 .owl-next{right: 10px}
+    
+.header-top-left a {
+  padding-right: 10px;
+}
+.header-top-left a i.zmdi {
+  padding-right: 5px;
+}
+.header-top-right.text-right {
+  margin-top: 0;
+}
+.section-title-hp2.testi-section-title-hp2.padding-top {
+	padding-top: 50px;
+}
+.hp2-testimonial-area.section-padding {
+	padding-top: 50px;padding-bottom: 0px;
+}
+.destinations-page-content-area.section-padding {
+	padding-bottom: 0;
+}
+.tours-details-menu-bottom.padding-top {
+	padding-top: 50px;
+}
+.welcome-to-travel-inner-left p span.big-letter {
+	width: 42px;
+	font-size: 52px;
+}
+.welcome-to-travel-inner-left .big-letter-right-text {
+	padding-left: 40px;
+}
+.welcome-to-travel-inner-left p span:nth-child(3) {
+	padding-left: 0;
+}
+.welcome-to-travel-inner-left, .section-title.text-center.rockstar-section-title.padding-bottom, .aboutus-page-content-area .team-members-area.padding-bottom, .destinations-page-content-area .single-team-member.padding-bottom, .team-details-content-area .single-team-member.padding-bottom{
+	padding-bottom: 0;
+}
+.section-title.why-best-title-about.padding-bottom {
+	margin-top: 0;margin-bottom: 0;
+}
+.team-single-details.padding-bottom{padding-bottom: 27px}
+.booking-form-heading.section-padding {
+	padding-top: 35px;
+}
+.car-details-address {
+	margin-bottom: 0;
+}
+.car-list-bottom-popular > h3 {
+	margin-bottom: 50px;
+}
+.car-details-page-content-area .car-details-right-sidebar-single.car-details-map h3 {
+	margin-bottom: 40px;
+}
+.car-details-right-sidebar-single.car-details-map h3 {
+	margin-top: 15px;
+}
+.car-details-right-sidebar-single h3 {
+	margin-top: 15px;
+}
+.car-list-page-content-area.padding-bottom,.car-details-page-content-area.section-padding.flight-details-page-content-area,.car-details-page-content-area.section-padding {
+	padding-bottom: 50px;
+}
+.flight-booking-page-area .booking-page-right,.hotel-booking-page-area .booking-page-right {
+	margin-top: 35px;
+}
+.flight-details-gray-widget {
+	margin-bottom: 30px;
+}
+.shop-details-bottom-menu.padding-top {
+	padding-top: 30px;
+}
+.contact-page-form h3 {
+	margin-bottom: 40px;
+}
+.contact-page-content-one.contact-v2-page-one .contact-info-box {
+	margin-bottom: 50px;
+}
+.error-page-conent-area.section-padding {
+	padding: 50px 0;
+}
+.footer-area.section-padding {
+	padding-bottom: 20px;
+}
+.client-details-div {
+	max-height: 190px;
+	padding: 35px 29px 37px 30px;
+}
+.client-image-box {
+	left: 35px;
+	top: 33px;
+}
+.hp3-testimonial-area .container .row .col-md-12{margin-left: 0;margin-right: 0;}
+.s-bottom-form .date-input-arrow::after {
+	top: 13px;
+}
+.hp2-testimonial-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: -20px;
+}
+.hp2-testimonial-carousel .owl-nav div.owl-prev {
+	left: -20px;
+	right: auto;
+}
+.single-f-destination-box {
+	width: 100px;
+	height: 83px;
+}
+.welcome-area.hp2-welcome-area .header-area .slicknav_menu ul li a:hover {
+	color: #f6b321;
+	background: #333;
+	opacity: 1;
+}
+.hp2-testimonial-carousel-single {
+	padding: 60px 30px;
+	margin: 50px 70px 40px 70px;
+}
+.hp2-testimonial-carousel .owl-nav div.owl-prev {
+	left: 0px;
+	right: auto;
+}
+.hp2-testimonial-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 0px;
+}
+.welcome-to-travel-inner-right {
+	position: relative;
+	padding-left: 235px;
+	width: 740px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 75px;
+}
+.welcome-to-travel-inner-right::after {
+	width: 280px;
+	height: 260px;
+	right: 325px;
+	top: 200px;
+}
+.team-member-carousel-about .owl-prev{
+	left: 0px;
+}
+.team-member-carousel-about .owl-next{
+	right: 0px;
+}
+.best-for-clients-single-item {
+	padding: 15px;
+	min-height: 335px;
+}
+.team-person-image {
+	width: 219px;
+	height: 219px;
+}
+.booking-page-content-area.car-booking-page-area.section-padding .booking-page-left-form {
+	margin-bottom: 30px;
+}
+.car-list-single-box-text {
+	padding: 20px 15px;
+}
+.car-list-single-box-text h4, .car-price h4 {
+	margin-bottom: 10px;
+}
+.car-list-single-box-text a.pink-btn {
+	width: 70%;
+	padding: 10px;
+}
+.car-share-btn {
+	width: 30%;
+}
+.car-list-page-content-area.padding-bottom {
+	padding-bottom: 20px;
+}
+.car-list-single-box {
+	margin-bottom: 30px;
+	min-height: 570px;
+}
+.car-list-top-form-inner.flight-list-form-inner button.pink-btn {
+	margin-top: 57px;
+}
+.car-list-single-box-image h3 {
+	font-size: 20px;
+}
+.flight-booking-page-area .car-details-right-sidebar-single.car-details-booking h3 {
+	margin-top: 25px;
+}
+.checkout-page-right-box button.pink-btn {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.checkout-page-right-box h4 {
+	margin-bottom: 10px;
+}
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+.header-right{text-align: left;}
+ .slicknav_menu {
+    display:block;
+}
+.slider-bottom-menu ul li a {
+	padding: 12px;
+	width: 71px;
+	margin-right: 5px;
+	font-size: 12px;
+}
+.slider-bottom-form-carousel-area-hp1 {
+	margin-top: 0px;
+}
+.mainmenu{display: none;}
+.s-bottom-form input,.s-bottom-form .nice-select {
+  font-size: 13px;
+  padding: 13px 20px;
+}
+.s-bottom-form .nice-select {
+  padding: 5px 20px;
+}
+.s-bottom-form button[type="submit"] {
+	width: auto;
+	padding: 15px 70px;
+}
+.single-top-destination-item {
+  margin-bottom: 30px;
+}
+.slider-bottom-menu {
+	margin-bottom: 25px;
+}
+.slider-bottom-gallery-hp1 .owl-dots {
+	bottom: -55px;
+}
+.slider-bottom-gallery-hp1 .owl-next, .hp1-top-destination-carousel .owl-next, .team-member-carousel-about .owl-next, .sea-tours-carousel-hp1-columns .owl-next {
+	right: 5px;
+}
+.slider-bottom-gallery-hp1 .owl-prev, .hp1-top-destination-carousel .owl-prev, .team-member-carousel-about .owl-prev, .sea-tours-carousel-hp1-columns .owl-prev {
+	left: 5px;
+}
+.slider-bottom-gallery-hp1 .owl-nav, .hp1-top-destination-carousel .owl-nav, .sea-tours-carousel-hp1-columns .owl-nav, .team-member-carousel-about .owl-nav {
+	top: 103%;
+}
+.section-title.text-center.section-padding {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.section-title h1 {
+	font-size: 35px;
+}
+.top-destination-columns.padding-bottom {
+  padding-bottom: 70px;
+}
+.post-day-count {
+  display: block;
+}
+.weekend-europe-area {
+	padding-bottom: 170px;
+}
+
+.single-counter-up-item {
+  font-size: 15px;
+  padding: 15px;
+  min-height: 180px;
+}
+.single-counter-up-item h1 {
+	margin: 15px 0;
+}
+.client-details-div {
+	max-height: 170px;
+}
+.footer-widget {
+  margin-bottom: 30px;
+}
+.footer-area.section-padding {
+	padding-bottom: 20px;
+}
+.section-title.text-center.clients-speech-title-hp1.section-padding {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.hp2-welcome-area .slicknav_menu .slicknav_icon-bar {
+	background: #fff;
+	color: #fff;
+}
+.hp2-slider-area .single-slide-item h1 {
+	font-size: 48px;
+	line-height: 50px;
+}
+.holiday-packages-single-item {
+	margin-top: 0;
+}
+.holiday-packages-right-carousel .owl-dots {
+	margin-top: 0px;
+}
+.destinations-honeymoon-single-item {
+	margin-top: 20px;
+}
+.hp2-testimonial-area.section-padding {
+	padding-bottom: 10px;
+	padding-top: 50px;
+}
+.section-title-hp2.testi-section-title-hp2.text-center.padding-top {
+	padding-top: 50px;
+}
+.single-sea-tours-text {
+	padding: 20px 15px;
+}
+.section-padding{padding: 50px 0}
+.padding-top{padding-top: 50px;}
+.padding-bottom{padding-bottom: 50px;}
+.team-member-image {
+  margin: 0 auto;
+}
+.team-members-area.padding-bottom,.aboutus-page-content-area.section-padding,.top-destination-columns.padding-bottom,.destinations-page-content-area.section-padding  {
+  padding-bottom: 0;
+}
+.post-review-stars,.car-list-top-form-inner .car-list-submit,.car-list-top-form-inner .car-list-check-out,.car-list-top-form-inner .car-list-find,.car-list-top-form-inner .car-list-child,.car-list-top-form-inner .car-list-child,.car-list-top-form-inner.flight-list-form-inner div.car-list-check-in,.car-list-top-form-inner.flight-list-form-inner div.car-list-submit,.car-list-top-form-inner.flight-list-form-inner div.car-list-adults,.flight-list-form-inner .car-list-check-in,.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-counter1,.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-destination  {
+  margin-left: 0;
+}
+.best-for-clients-single-item,.single-top-destination-item,.team-single-details-left,.car-details-address,.car-details-right-sidebar-single.car-details-map h3,.single-team-member {
+	margin-bottom: 50px;
+}
+.car-list-top-form-inner button.pink-btn {
+  margin-top: 0;
+}
+.welcome-to-travel-inner::before {
+	right: 0px;
+	top: 120px;
+	width: 45%;
+	height: 195px;
+}
+.welcome-to-travel-inner::after {
+	right: 0%;
+	top: 25%;
+	width: 45%;
+	height: 125px;
+}
+.single-team-member,.car-list-top-form-inner .car-list-submit,.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-button {
+	margin-bottom: 0;
+}
+.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-button {
+  margin-top: 10px;
+}
+
+.car-list-top-form-inner div {
+	margin-right: 0;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.car-list-top-form-inner .car-list-submit {
+	float: left;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.car-list-top-form-inner div {
+  margin-left: 0;
+}
+.car-list-top-form-inner .car-list-adults,.car-list-top-form-inner .car-list-check-in,.car-list-top-form-inner .car-list-child,.car-details-right-sidebar .car-details-right-sidebar-single:last-child,.car-list-top-form-inner.flight-list-form-inner div.car-list-check-in,.car-list-top-form-inner.flight-list-form-inner div.car-list-submit,.booking-page-content-area.car-booking-page-area .car-details-right-sidebar-single:last-child,.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-adventure,.hotel-list-page-content-area .car-list-top-form-inner .hp2-form-single-div.hp2-form-single-counter2,.hp2-form-area-inner .hp2-form-single-div.hp2-form-single-adventure,.hp2-form-area-inner .hp2-form-single-div.hp2-form-single-counter2  {
+  margin-right: 0;
+}
+.car-list-top-form-inner .car-list-child {
+	width: 100%;
+}
+.car-list-single-box-text a.pink-btn {
+	width: 70%;
+	text-align: center;
+}
+.car-share-btn {
+	width: 30%;
+}
+
+.car-details-right-sidebar-single {
+	width: 100%;
+	margin-right: 0;
+}
+.car-details-right-sidebar-single h3, .car-details-right-sidebar-single.car-details-map h3, .need-travel-help {
+	margin-top: 50px;
+}
+.car-list-top-form-inner.flight-list-form-inner div {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.flight-list-form-inner .car-list-check-in,.car-list-top-form-inner.flight-list-form-inner div,.hp2-form-area-inner .hp2-form-single-div {
+  margin-right: 2%;
+}
+.car-list-top-form-inner.flight-list-form-inner div.car-list-submit{margin-top: 0;}
+
+.hotel-list-page-content-area .car-list-top-form-inner .nice-select {
+  width: 100%;
+}
+.shop-details-top-right,.blog-sidebar-content {
+	margin-top: 50px;
+}
+.login-via-btn i.zmdi {
+	left: 280px;
+}
+.error-page-content-v2 {
+	padding-right: 300px;
+}
+.page-title-menu {
+	position: absolute;
+	right: auto;
+	top: 65%;
+	margin-top: -14px;
+	width: 100%;
+	text-align: center;
+}
+.slider-area-hp1 .owl-dots {
+	padding-right: 13%;
+}
+.header-top-right.text-right {
+	text-align: center;
+}
+.best-tour-packages-top-hp3-inner a,.header-top-area-hp3 .header-right {
+	font-size: 14px;
+}
+.hp2-form-area-inner {
+	margin-top: -100px;
+}
+.header-top-area-hp3 .header-right,.header-top-right.text-right{margin-top: 20px;}
+.hp2-form-area-inner .hp2-form-single-div {
+  width: 49%;
+}
+.hp2-form-area-inner .hp2-form-single-div.hp2-form-single-button button.pink-btn {
+  margin-top: 25px;
+}
+.hp2-form-area-inner {
+  min-height: 451px;
+}
+.best-for-clients-columns.hp2-area-bg.section-padding-hp2,.padding-bottom-hp2,.destinations-honeymoon-area.hp2-area-bg.section-padding-hp2,.footer-area.hp2-footer-area .footer-top-area,.blog-medium-area-hp3.blog-medium-grid-area.padding-bottom,.hp3-slider-inner-text,.welcome-to-travel-inner-left,.sea-tours-columns.padding-bottom {
+	padding-bottom: 0;
+}
+.section-padding-hp2{padding: 50px 0}
+.padding-top-hp2{padding-top: 50px;}
+.holiday-packages-left-item.padding-top {
+	padding-top: 0;
+}
+.world-out-there-left,.popular-destinations-hp3-left,.destinations-honeymoon-single-item,.holiday-packages-left-item.padding-top,.blog-medium-area-hp3 .single-blog-mediun-grid,.s-bottom-form  {
+	margin-bottom: 50px;
+}
+
+.header-right.header-right-hp3 {
+	margin-bottom: 15px;
+}
+.hp3-slider-inner-text h1 {
+	font-size: 45px;
+	margin-bottom: 40px;
+}  
+.hp2-form-area-inner input, .hp2-form-area-inner .nice-select {
+  font-size: 12px;
+}
+.hp2-form-area-inner .nice-select {
+  padding: 5px 15px;
+}
+.single-slide-item h1 {
+	font-size: 70px;
+	line-height: 65px;
+}
+.slider-bottom-menu {
+	text-align: center;
+}
+.top-destination-area {
+	margin-top: 95px;
+}
+.single-counter-up-item,.section-title-hp3 h1 {
+	margin-bottom: 20px;
+}
+.hp3-slider-area::after {
+	width: 40%;display: none;
+}
+.absolute-socials-slider {
+	left: 0;
+}
+.hp3-slider-area {
+	padding: 50px 0;
+}
+.hp3-slider-inner-text {
+	padding-left: 45px;
+}
+.popular-destinations-hp3-area .popular-destinations-hp3-carousel {
+	padding: 0 0;
+}
+.popular-destinations-hp3-carousel .owl-nav {
+	right: 25px;display: none;
+}
+.best-tour-packages-top-hp3-inner h2 {
+	font-size: 22px;
+	margin-top: 60px;
+}
+.need-travel-help {
+	padding-bottom: 25px;
+}
+.aboutus-page-content-area .single-team-member,.contact-us-right-area h3,.car-list-bottom-popular > h3 {
+	margin-bottom: 50px;
+}
+.car-list-top-form-inner.flight-list-form-inner button.pink-btn {
+	margin-top: 0;
+}
+.car-list-single-box {
+	min-height: 500px;
+}
+.flight-details-gray-widget {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.single-shop-product {
+	margin: 30px 0;
+}
+.contact-us-right-area h3 {
+	margin-top: 50px;
+}
+.login-via-btn i.zmdi {
+  position: inherit;
+}
+.header-right a {
+	padding: 0 10px;
+}
+.slider-area-hp1 .owl-dot {
+	height: 65px;
+	width: 73px;
+} 
+.client-image-box {
+	width: 80px;
+	height: 80px;
+}
+.client-name-text {
+	padding-left: 90px;
+	padding-top: 15px;
+	padding-bottom: 0;
+}
+.client-name-text h5 {
+	margin-bottom: 5px;
+}
+.happy-client-single-item {
+	margin-bottom: 80px;
+}
+.padding-bottom.footer-top-area {
+	padding-bottom: 30px;
+}
+.header-top-left a {
+	padding-right: 0;
+	display: block;
+	text-align: center;
+}
+.hp2-slider-area .single-slide-item h1 {
+	font-size: 48px;
+}
+.hp2-form-single-div p {
+	margin-bottom: 15px;
+}
+.hp2-form-single-div p,.hp2-form-area-inner .hp2-form-single-div.hp2-form-single-button{font-size: 12px;}
+.hp2-form-area-inner .hp2-form-single-div.hp2-form-single-button {
+	width: 75%;
+}
+.hp2-form-area-inner {
+	min-height: 370px;
+}
+.section-title-hp2 h1, .world-out-there-left h1 {
+	font-size: 20px;
+}
+.section-title-hp2 h1::after, .world-out-there-left h1::after {
+	bottom: 6px;
+	height: 4px;
+}
+.world-out-there-left h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.hp2-testimonial-carousel-single {
+	padding: 60px 10px;
+	margin: 50px 20px 40px 20px;
+}
+.popular-destinations-hp3-left h1,.section-title-hp3 h1,.single-counter-up-item h1{font-size: 30px;}
+.page-title-inner h1 {
+	font-size: 55px;
+}
+.single-sea-tours-item,.popular-destinations-hp3-left h1 {
+	margin-bottom: 30px;
+}
+.tours-details-gallery .owl-dot {
+	height: 60px;
+	width: 75px;
+}
+.tours-details-menu a {
+	font-size: 15px;
+	padding: 12px;
+} 
+.holiday-packages-item-text ul li a::before {
+	display: none;
+}
+.single-f-destination-box {
+	width: 82px;
+	height: 65px;
+	margin-bottom: 30px;font-size: 14px;
+}
+.single-f-destination-box-table-cell {
+	font-weight: 400;
+}
+.tours-details-menu {
+	margin-top: 40px;
+	background: #F5F5F5;
+}
+.need-travel-help, .why-book-us {
+	padding: 30px 30px;
+	box-shadow: 0 0 50px #F9F9F9;
+}
+.booking-page-left-form label {
+	font-weight: 400;
+	padding-left: 2px;
+	font-size: 11px;
+}
+.car-list-top-form-inner input {
+	font-size: 13px;
+}
+.car-list-top-form-inner div.car-list-submit {
+	width: 100%;
+}
+.car-list-top-form-inner h6 {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.shop-page-content-area.section-padding {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.shop-details-gallery .owl-dots div {
+	width: 80px;
+	height: 61px;
+	margin-left: 5px;
+	margin-top: 20px;
+}
+.shop-details-form button {
+	margin-left: 20px;
+}
+.shop-details-bottom-menu.padding-top {
+	padding-top: 30px;
+}
+.blog-single-comment-item.blog-single-reply-item {
+	margin-left: 30px;
+}
+.cart-totals,.cart-checkout {
+	width: 100%;
+}
+.cart-buttons input, .cart-buttons a {
+	width: 100%;
+	margin-bottom: 20px;
+}
+    .cart-buttons a{text-align: center;}
+    .cart-page-content h3 {
+	margin-top: 20px;
+}
+    .checkout-page-right-box h4 {
+	margin-bottom: 20px;
+}
+.error-page-content-v2 {
+	padding-right: 0;
+}
+.welcome-area {
+	height: 620px;
+}
+.header-right {
+	display: none;
+}
+.team-single-details.padding-bottom {
+	padding-bottom: 30px;
+}
+.destinations-page-content-area .single-team-member.padding-bottom, .team-details-content-area .single-team-member.padding-bottom {
+	padding-bottom: 35px;
+}
+.booking-form-heading.section-padding {
+	padding-top: 35px;
+}
+.car-list-page-content-area.padding-bottom, .car-details-page-content-area.section-padding {
+	padding-bottom: 45px;
+}
+.car-list-bottom-popular.padding-top {
+	padding-top: 40px;
+}
+.car-details-page-content-area .car-details-right-sidebar-single.car-details-map h3 {
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+.shop-details-bottom-menu ul li {
+	font-size: 20px;
+}
+.blog-single-comment-item {
+	margin-bottom: 40px;
+}
+.contact-page-form h3 {
+	margin-bottom: 40px;
+}
+.contact-page-content-one.contact-v2-page-one .contact-info-box {
+	margin-bottom: 50px;
+}
+.error-page-content-area-v2 .error-page-content::after {
+	right: 32px;
+	opacity: .3;
+}
+.hp2-form-area.hp3-form-area {
+	padding: 45px 0 45px 0;
+}
+.tours-details-gallery .owl-dots {
+	margin-top: -30px;
+}
+.tours-details-gallery .owl-dot {
+	height: 70px;
+	width: 85px;
+}
+.tours-details-gallery .owl-dots .owl-dot img {
+	height: 100%;
+}
+
+.subscribe-mail-form input {
+	margin-bottom: 25px;
+}
+.section-title-hp3.section-title-clients-testi.section-padding, .subscribe-mail-area.black-overlay.section-padding {
+	padding-top: 45px;
+}
+.hp3-testimonial-area.padding-bottom {
+	padding-bottom: 30px;
+}
+.section-title-hp3.section-title-news-artic.padding-bottom {
+	padding-bottom: 50px;
+}
+.section-title-hp3.section-title-clients-testi.section-padding {
+	padding-bottom: 25px;
+}
+.popular-destinations-hp3-area.section-padding {
+	padding-bottom: 30px;
+}
+.best-tour-packages-area-hp3.padding-bottom {
+	padding-bottom: 45px;
+}
+.section-title-hp3.section-title-best-tour.section-padding {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.tours-details-gallery .owl-dot {
+	height: 54px;
+	width: 63px;
+	margin: 5px;
+}
+.tours-details-gallery .owl-nav {
+	display: none;
+}
+.tours-details-gallery {
+	padding-bottom: 40px;
+}
+.tours-details-menu-bottom.padding-top {
+	padding-top: 45px;
+}
+.welcome-to-travel-inner-left p span.big-letter {
+	font-size: 50px;
+}
+.welcome-to-travel-inner-left .big-letter-right-text {
+	padding-left: 40px;
+}
+.welcome-to-travel-inner-left span:nth-child(3) {
+	padding-left: 0;
+}
+.welcome-to-travel-inner::after {
+	right: 0%;
+	top: auto;
+	width: 55%;
+	height: 125px;
+	bottom: 0;
+	height: 185px;
+}
+.welcome-to-travel-inner::before {
+	right: auto;
+	top: auto;
+	width: 75%;
+	height: 195px;
+	bottom: 85px;
+	left: 0;
+}
+.welcome-to-travel-inner {
+    position: relative;
+    z-index: 1;
+    padding-right: 0;
+    padding-bottom: 45px;
+}
+.welcome-to-travel-inner-right:after {
+    right: 90px;
+    top: 140px;
+}
+.counter-up-area.counter-up-about.section-padding {
+	padding-bottom: 30px;
+}
+.section-title.rockstar-section-title.padding-bottom {
+	padding-bottom: 5px;
+}
+.section-title.why-best-title-about.padding-bottom {
+	padding-bottom: 0;
+	margin-top: 0;
+}
+.aboutus-page-content-area .single-team-member {
+	margin-bottom: 0;
+}
+.aboutus-page-content-area .team-members-area.padding-bottom {
+	padding-bottom: 35px;
+}
+.blog-details-tag-line, .blog-details-socials-line {
+	padding-bottom: 45px;
+}
+.blog-details-comments {
+	margin-bottom: 35px;
+}
+.blog-details-page-area.section-padding {
+	padding-bottom: 0px;
+}
+.single-blog-mediun-grid.padding-bottom {
+	padding-bottom: 40px;
+}
+.blog-medium-grid-area.blog-medium-page.padding-top {
+	padding-bottom: 0;
+}
+.blog-pagination-links a {
+	padding-right: 10px;
+}
+.blog-pagination-links.blog-left-pagination {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.blog-pagination-links {
+	padding-top: 35px;
+}
+.blog-left-sidebar-page-area.section-padding {
+	padding-bottom: 0;
+}
+.blog-details-page-area .blog-box-content-text {
+	margin-bottom: 20px;
+}
+.blog-box-content-text {
+	margin-bottom: 45px;
+}
+.hp3-testimonial-area .container .row .col-md-12{margin-left: 0;margin-right: 0;}
+.holiday-packages-item-text {
+	padding: 30px 15px 55px 15px;
+}
+.holiday-packages-item-text ul li a {
+	padding-left: 0px;
+}
+.select-height-class {
+	height: 90px;
+}
+.cart-products-quantity input {
+	width: 55px;
+}
+.car-products-row-padding,.cart-products-heading-pink {
+	font-size: 13px;
+}
+.cart-buttons input {
+	margin-right: 0;
+}
+.welcome-to-travel-inner-right::after {
+    right: 0;
+    top: 220px;
+    width: 100%;
+}
+.welcome-to-travel-inner-right {
+    padding-left: 0;
+    padding-bottom: 280px;
+    width: 250px;
+    margin: 0 auto;
+}
+.team-person-image {
+    margin: 0 auto;
+}
+.header-area.sticky-header-class .slicknav_menu a:hover {
+    opacity: 1;
+}
+.checkout-left-top {
+    margin-bottom: 20px;
+}
+.checkout-page-left-form h4,.contact-page-form.contact-pageform-v2 h3 {
+    margin-bottom: 30px;
+}
+.contact-map-area.contact-map-v2 {
+    margin-bottom: 15px;
+}
+.contact-page-conent-area.section-padding {
+    padding-bottom: 25px;
+}
+.single-f-destination-box {
+	width: 75px;
+}
+.welcome-area.hp2-welcome-area .header-area .slicknav_menu ul li a:hover {
+	color: #f6b321;
+	background: #333;
+	opacity: 1;
+}
+.tab-content.tours-details-tab-content.padding-top {
+    padding-top: 40px;
+}
+.tours-details-menu ul.nav.nav-tabs a {
+    font-size: 16px;
+    padding: 16px;
+}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+.header-right{text-align: left;}
+ .slicknav_menu {
+    display:block;
+}
+.mainmenu{display: none;}
+.client-name-text h5 {
+	font-size: 16px;
+}
+.client-name-text {
+	padding-left: 90px;
+	padding-top: 0px;
+	padding-bottom: 0;
+}
+
+.slider-bottom-menu ul li a {
+	padding: 14px;
+	width: 100px;
+	margin-right: 15px;
+	font-size: 16px;
+}
+.holiday-packages-item-text a.pink-btn, .holiday-packages-left-item a.pink-btn {
+	margin-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.holiday-packages-item-text h4 {
+	font-size: 17px;
+}
+.hp3-slider-area::after {
+	width: 40%;display: block;
+}
+.welcome-to-travel-inner-right {
+	margin-bottom: 65px;
+}
+.welcome-to-travel-inner-right::after {
+	right: auto;
+	top: 120px;
+	width: 230px;
+	left: 40px;
+	height: 200px;
+}
+.welcome-to-travel-inner-right {
+	padding-left: 150px;
+	padding-bottom: 60px;
+	width: 480px;
+	margin: 0 auto;
+}
+.destinations-page-content-area.section-padding,.car-list-page-content-area,.car-details-page-content-area,.shop-page-content-area,.blog-medium-grid-area,.blog-details-page-area,.blog-left-sidebar-page-area {
+	width: 480px;
+	margin: 0 auto;
+}
+.welcome-to-travel-inner {
+	padding-bottom: 30px;
+}
+.team-person-image {
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.footer-widget.destination-widget {
+	width: 306px;
+}
+.hp2-testimonial-carousel-single {
+	padding: 60px 30px;
+	margin: 50px 70px 40px 70px;
+}
+.hp2-testimonial-carousel .owl-nav div.owl-prev {
+	left: 0px;
+	right: auto;
+}
+.hp2-testimonial-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 0px;
+}
+}

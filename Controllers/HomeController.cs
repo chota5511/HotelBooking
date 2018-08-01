@@ -26,5 +26,16 @@ namespace HotelBooking.Controllers
 
             return View();
         }
+
+        //PartialView here
+        public ActionResult TopDestination()
+        {
+            return PartialView();
+        }
+
+        public ActionResult SectionSeaToursArea()
+        {
+            return PartialView();
+        }
     }
 }

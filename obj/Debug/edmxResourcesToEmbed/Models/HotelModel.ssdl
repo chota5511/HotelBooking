@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HOTELModel.Store" Provider="Npgsql" ProviderManifestToken="10.4" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="administrators">
+    <Key>
+      <PropertyRef Name="administratorid" />
+    </Key>
+    <Property Name="administratorid" Type="bpchar" MaxLength="50" Nullable="false" />
+    <Property Name="administratorname" Type="bpchar" MaxLength="50" />
+    <Property Name="administratorbirth" Type="date" />
+    <Property Name="administratorsex" Type="bpchar" MaxLength="3" />
+    <Property Name="authorizationid" Type="int4" Nullable="false" />
+    <Property Name="administratorpassword" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="administrators_authorizations">
+    <Key>
+      <PropertyRef Name="administratorid" />
+      <PropertyRef Name="authorizationid" />
+    </Key>
+    <Property Name="administratorid" Type="bpchar" MaxLength="50" Nullable="false" />
+    <Property Name="authorizationid" Type="int4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="authorizations">
+    <Key>
+      <PropertyRef Name="authorizationid" />
+    </Key>
+    <Property Name="authorizationid" Type="int4" Nullable="false" />
+    <Property Name="authorizationname" Type="text" />
+  </EntityType>
+  <EntityType Name="bill">
+    <Key>
+      <PropertyRef Name="billid" />
+    </Key>
+    <Property Name="billid" Type="int4" Nullable="false" />
+    <Property Name="billdate" Type="date" Nullable="false" />
+    <Property Name="dateend" Type="date" Nullable="false" />
+    <Property Name="ticketid" Type="int4" Nullable="false" />
+    <Property Name="administratorid" Type="bpchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="city">
+    <Key>
+      <PropertyRef Name="cityid" />
+    </Key>
+    <Property Name="cityid" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cityname" Type="bpchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="city_district">
+    <Key>
+      <PropertyRef Name="cityid" />
+      <PropertyRef Name="districtid" />
+    </Key>
+    <Property Name="cityid" Type="int4" Nullable="false" />
+    <Property Name="districtid" Type="int4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="city_street">
+    <Key>
+      <PropertyRef Name="cityid" />
+      <PropertyRef Name="streetid" />
+    </Key>
+    <Property Name="cityid" Type="int4" Nullable="false" />
+    <Property Name="streetid" Type="int4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="district">
+    <Key>
+      <PropertyRef Name="districtid" />
+    </Key>
+    <Property Name="districtid" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="districtname" Type="bpchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="hotel">
+    <Key>
+      <PropertyRef Name="hotelid" />
+    </Key>
+    <Property Name="hotelid" Type="int4" Nullable="false" />
+    <Property Name="hotelname" Type="bpchar" MaxLength="50" />
+    <Property Name="addressnumber" Type="bpchar" MaxLength="20" Nullable="false" />
+    <Property Name="streetid" Type="int4" Nullable="false" />
+    <Property Name="districtid" Type="int4" Nullable="false" />
+    <Property Name="cityid" Type="int4" Nullable="false" />
+    <Property Name="unitprice" Type="numeric" Precision="19" Scale="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="street">
+    <Key>
+      <PropertyRef Name="streetid" />
+    </Key>
+    <Property Name="streetid" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="streetname" Type="bpchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ticket">
+    <Key>
+      <PropertyRef Name="ticketid" />
+    </Key>
+    <Property Name="ticketid" Type="int4" Nullable="false" />
+    <Property Name="ticketdate" Type="date" Nullable="false" />
+    <Property Name="datestart" Type="date" Nullable="false" />
+    <Property Name="expectdateend" Type="date" />
+    <Property Name="hotelid" Type="int4" Nullable="false" />
+    <Property Name="userid" Type="bpchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="bpchar" MaxLength="50" Nullable="false" />
+    <Property Name="username" Type="bpchar" MaxLength="50" />
+    <Property Name="userbirth" Type="date" />
+    <Property Name="usersex" Type="bpchar" MaxLength="3" />
+    <Property Name="userpassword" Type="text" Nullable="false" />
+  </EntityType>
+  <Association Name="administrators_administrators_authorizations_fk">
+    <End Role="administrators" Type="Self.administrators" Multiplicity="1" />
+    <End Role="administrators_authorizations" Type="Self.administrators_authorizations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="administrators">
+        <PropertyRef Name="administratorid" />
+      </Principal>
+      <Dependent Role="administrators_authorizations">
+        <PropertyRef Name="administratorid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="administrators_bill_fk">
+    <End Role="administrators" Type="Self.administrators" Multiplicity="1" />
+    <End Role="bill" Type="Self.bill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="administrators">
+        <PropertyRef Name="administratorid" />
+      </Principal>
+      <Dependent Role="bill">
+        <PropertyRef Name="administratorid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="authorizations_administrators_authorizations_fk">
+    <End Role="authorizations" Type="Self.authorizations" Multiplicity="1" />
+    <End Role="administrators_authorizations" Type="Self.administrators_authorizations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="authorizations">
+        <PropertyRef Name="authorizationid" />
+      </Principal>
+      <Dependent Role="administrators_authorizations">
+        <PropertyRef Name="authorizationid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="city_city_district_fk">
+    <End Role="city" Type="Self.city" Multiplicity="1" />
+    <End Role="city_district" Type="Self.city_district" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="city">
+        <PropertyRef Name="cityid" />
+      </Principal>
+      <Dependent Role="city_district">
+        <PropertyRef Name="cityid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="city_city_street_fk">
+    <End Role="city" Type="Self.city" Multiplicity="1" />
+    <End Role="city_street" Type="Self.city_street" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="city">
+        <PropertyRef Name="cityid" />
+      </Principal>
+      <Dependent Role="city_street">
+        <PropertyRef Name="cityid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="city_hotel_fk">
+    <End Role="city" Type="Self.city" Multiplicity="1" />
+    <End Role="hotel" Type="Self.hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="city">
+        <PropertyRef Name="cityid" />
+      </Principal>
+      <Dependent Role="hotel">
+        <PropertyRef Name="cityid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="district_city_district_fk">
+    <End Role="district" Type="Self.district" Multiplicity="1" />
+    <End Role="city_district" Type="Self.city_district" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="district">
+        <PropertyRef Name="districtid" />
+      </Principal>
+      <Dependent Role="city_district">
+        <PropertyRef Name="districtid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="district_hotel_fk">
+    <End Role="district" Type="Self.district" Multiplicity="1" />
+    <End Role="hotel" Type="Self.hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="district">
+        <PropertyRef Name="districtid" />
+      </Principal>
+      <Dependent Role="hotel">
+        <PropertyRef Name="districtid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hotel_ticket_fk">
+    <End Role="hotel" Type="Self.hotel" Multiplicity="1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hotel">
+        <PropertyRef Name="hotelid" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="hotelid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="street_city_street_fk">
+    <End Role="street" Type="Self.street" Multiplicity="1" />
+    <End Role="city_street" Type="Self.city_street" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="street">
+        <PropertyRef Name="streetid" />
+      </Principal>
+      <Dependent Role="city_street">
+        <PropertyRef Name="streetid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="street_hotel_fk">
+    <End Role="street" Type="Self.street" Multiplicity="1" />
+    <End Role="hotel" Type="Self.hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="street">
+        <PropertyRef Name="streetid" />
+      </Principal>
+      <Dependent Role="hotel">
+        <PropertyRef Name="streetid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ticket_bill_fk">
+    <End Role="ticket" Type="Self.ticket" Multiplicity="1" />
+    <End Role="bill" Type="Self.bill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ticket">
+        <PropertyRef Name="ticketid" />
+      </Principal>
+      <Dependent Role="bill">
+        <PropertyRef Name="ticketid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="user_ticket_fk">
+    <End Role="users" Type="Self.users" Multiplicity="1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="userid" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="userid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HOTELModelStoreContainer">
+    <EntitySet Name="administrators" EntityType="Self.administrators" Schema="public" store:Type="Tables" />
+    <EntitySet Name="administrators_authorizations" EntityType="Self.administrators_authorizations" Schema="public" store:Type="Tables" />
+    <EntitySet Name="authorizations" EntityType="Self.authorizations" Schema="public" store:Type="Tables" />
+    <EntitySet Name="bill" EntityType="Self.bill" Schema="public" store:Type="Tables" />
+    <EntitySet Name="city" EntityType="Self.city" Schema="public" store:Type="Tables" />
+    <EntitySet Name="city_district" EntityType="Self.city_district" Schema="public" store:Type="Tables" />
+    <EntitySet Name="city_street" EntityType="Self.city_street" Schema="public" store:Type="Tables" />
+    <EntitySet Name="district" EntityType="Self.district" Schema="public" store:Type="Tables" />
+    <EntitySet Name="hotel" EntityType="Self.hotel" Schema="public" store:Type="Tables" />
+    <EntitySet Name="street" EntityType="Self.street" Schema="public" store:Type="Tables" />
+    <EntitySet Name="ticket" EntityType="Self.ticket" Schema="public" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="public" store:Type="Tables" />
+    <AssociationSet Name="administrators_administrators_authorizations_fk" Association="Self.administrators_administrators_authorizations_fk">
+      <End Role="administrators" EntitySet="administrators" />
+      <End Role="administrators_authorizations" EntitySet="administrators_authorizations" />
+    </AssociationSet>
+    <AssociationSet Name="administrators_bill_fk" Association="Self.administrators_bill_fk">
+      <End Role="administrators" EntitySet="administrators" />
+      <End Role="bill" EntitySet="bill" />
+    </AssociationSet>
+    <AssociationSet Name="authorizations_administrators_authorizations_fk" Association="Self.authorizations_administrators_authorizations_fk">
+      <End Role="authorizations" EntitySet="authorizations" />
+      <End Role="administrators_authorizations" EntitySet="administrators_authorizations" />
+    </AssociationSet>
+    <AssociationSet Name="city_city_district_fk" Association="Self.city_city_district_fk">
+      <End Role="city" EntitySet="city" />
+      <End Role="city_district" EntitySet="city_district" />
+    </AssociationSet>
+    <AssociationSet Name="city_city_street_fk" Association="Self.city_city_street_fk">
+      <End Role="city" EntitySet="city" />
+      <End Role="city_street" EntitySet="city_street" />
+    </AssociationSet>
+    <AssociationSet Name="city_hotel_fk" Association="Self.city_hotel_fk">
+      <End Role="city" EntitySet="city" />
+      <End Role="hotel" EntitySet="hotel" />
+    </AssociationSet>
+    <AssociationSet Name="district_city_district_fk" Association="Self.district_city_district_fk">
+      <End Role="district" EntitySet="district" />
+      <End Role="city_district" EntitySet="city_district" />
+    </AssociationSet>
+    <AssociationSet Name="district_hotel_fk" Association="Self.district_hotel_fk">
+      <End Role="district" EntitySet="district" />
+      <End Role="hotel" EntitySet="hotel" />
+    </AssociationSet>
+    <AssociationSet Name="hotel_ticket_fk" Association="Self.hotel_ticket_fk">
+      <End Role="hotel" EntitySet="hotel" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+    <AssociationSet Name="street_city_street_fk" Association="Self.street_city_street_fk">
+      <End Role="street" EntitySet="street" />
+      <End Role="city_street" EntitySet="city_street" />
+    </AssociationSet>
+    <AssociationSet Name="street_hotel_fk" Association="Self.street_hotel_fk">
+      <End Role="street" EntitySet="street" />
+      <End Role="hotel" EntitySet="hotel" />
+    </AssociationSet>
+    <AssociationSet Name="ticket_bill_fk" Association="Self.ticket_bill_fk">
+      <End Role="ticket" EntitySet="ticket" />
+      <End Role="bill" EntitySet="bill" />
+    </AssociationSet>
+    <AssociationSet Name="user_ticket_fk" Association="Self.user_ticket_fk">
+      <End Role="users" EntitySet="users" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

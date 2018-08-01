@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HOTELModelStoreContainer" CdmEntityContainer="HOTELEntities">
+    <EntitySetMapping Name="administrators">
+      <EntityTypeMapping TypeName="HOTELModel.administrator">
+        <MappingFragment StoreEntitySet="administrators">
+          <ScalarProperty Name="administratorid" ColumnName="administratorid" />
+          <ScalarProperty Name="administratorname" ColumnName="administratorname" />
+          <ScalarProperty Name="administratorbirth" ColumnName="administratorbirth" />
+          <ScalarProperty Name="administratorsex" ColumnName="administratorsex" />
+          <ScalarProperty Name="authorizationid" ColumnName="authorizationid" />
+          <ScalarProperty Name="administratorpassword" ColumnName="administratorpassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="authorizations">
+      <EntityTypeMapping TypeName="HOTELModel.authorization">
+        <MappingFragment StoreEntitySet="authorizations">
+          <ScalarProperty Name="authorizationid" ColumnName="authorizationid" />
+          <ScalarProperty Name="authorizationname" ColumnName="authorizationname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bills">
+      <EntityTypeMapping TypeName="HOTELModel.bill">
+        <MappingFragment StoreEntitySet="bill">
+          <ScalarProperty Name="billid" ColumnName="billid" />
+          <ScalarProperty Name="billdate" ColumnName="billdate" />
+          <ScalarProperty Name="dateend" ColumnName="dateend" />
+          <ScalarProperty Name="ticketid" ColumnName="ticketid" />
+          <ScalarProperty Name="administratorid" ColumnName="administratorid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cities">
+      <EntityTypeMapping TypeName="HOTELModel.city">
+        <MappingFragment StoreEntitySet="city">
+          <ScalarProperty Name="cityid" ColumnName="cityid" />
+          <ScalarProperty Name="cityname" ColumnName="cityname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="districts">
+      <EntityTypeMapping TypeName="HOTELModel.district">
+        <MappingFragment StoreEntitySet="district">
+          <ScalarProperty Name="districtid" ColumnName="districtid" />
+          <ScalarProperty Name="districtname" ColumnName="districtname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hotels">
+      <EntityTypeMapping TypeName="HOTELModel.hotel">
+        <MappingFragment StoreEntitySet="hotel">
+          <ScalarProperty Name="hotelid" ColumnName="hotelid" />
+          <ScalarProperty Name="hotelname" ColumnName="hotelname" />
+          <ScalarProperty Name="addressnumber" ColumnName="addressnumber" />
+          <ScalarProperty Name="streetid" ColumnName="streetid" />
+          <ScalarProperty Name="districtid" ColumnName="districtid" />
+          <ScalarProperty Name="cityid" ColumnName="cityid" />
+          <ScalarProperty Name="unitprice" ColumnName="unitprice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="streets">
+      <EntityTypeMapping TypeName="HOTELModel.street">
+        <MappingFragment StoreEntitySet="street">
+          <ScalarProperty Name="streetid" ColumnName="streetid" />
+          <ScalarProperty Name="streetname" ColumnName="streetname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tickets">
+      <EntityTypeMapping TypeName="HOTELModel.ticket">
+        <MappingFragment StoreEntitySet="ticket">
+          <ScalarProperty Name="ticketid" ColumnName="ticketid" />
+          <ScalarProperty Name="ticketdate" ColumnName="ticketdate" />
+          <ScalarProperty Name="datestart" ColumnName="datestart" />
+          <ScalarProperty Name="expectdateend" ColumnName="expectdateend" />
+          <ScalarProperty Name="hotelid" ColumnName="hotelid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="HOTELModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="userbirth" ColumnName="userbirth" />
+          <ScalarProperty Name="usersex" ColumnName="usersex" />
+          <ScalarProperty Name="userpassword" ColumnName="userpassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="administrators_authorizations" TypeName="HOTELModel.administrators_authorizations" StoreEntitySet="administrators_authorizations">
+      <EndProperty Name="administrators">
+        <ScalarProperty Name="administratorid" ColumnName="administratorid" />
+      </EndProperty>
+      <EndProperty Name="authorizations">
+        <ScalarProperty Name="authorizationid" ColumnName="authorizationid" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="city_district" TypeName="HOTELModel.city_district" StoreEntitySet="city_district">
+      <EndProperty Name="city">
+        <ScalarProperty Name="cityid" ColumnName="cityid" />
+      </EndProperty>
+      <EndProperty Name="district">
+        <ScalarProperty Name="districtid" ColumnName="districtid" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="city_street" TypeName="HOTELModel.city_street" StoreEntitySet="city_street">
+      <EndProperty Name="city">
+        <ScalarProperty Name="cityid" ColumnName="cityid" />
+      </EndProperty>
+      <EndProperty Name="street">
+        <ScalarProperty Name="streetid" ColumnName="streetid" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
