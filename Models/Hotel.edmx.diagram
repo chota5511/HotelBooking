@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="621b8a2bb69d47699ede2087a7606b81" Name="Diagram1">
+      <Diagram DiagramId="76f8bc5c0fcc4c34832c7f29580caf99" Name="Diagram1">
         <EntityTypeShape EntityType="HOTELModel.administrator" Width="1.5" PointX="7.5" PointY="2" IsExpanded="true" />
         <EntityTypeShape EntityType="HOTELModel.authorization" Width="1.5" PointX="9.75" PointY="2.5" IsExpanded="true" />
         <EntityTypeShape EntityType="HOTELModel.bill" Width="1.5" PointX="9.75" PointY="6.125" IsExpanded="true" />
         <EntityTypeShape EntityType="HOTELModel.city" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
         <EntityTypeShape EntityType="HOTELModel.district" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
         <EntityTypeShape EntityType="HOTELModel.hotel" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="HOTELModel.street" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELModel.street" Width="1.5" PointX="1.5" PointY="7.375" IsExpanded="true" />
         <EntityTypeShape EntityType="HOTELModel.ticket" Width="1.5" PointX="7.5" PointY="5.875" IsExpanded="true" />
         <EntityTypeShape EntityType="HOTELModel.user" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
         <AssociationConnector Association="HOTELModel.administrators_bill_fk" ManuallyRouted="false" />

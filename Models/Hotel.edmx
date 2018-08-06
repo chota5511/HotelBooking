@@ -28,7 +28,7 @@
           <Key>
             <PropertyRef Name="authorizationid" />
           </Key>
-          <Property Name="authorizationid" Type="int4" Nullable="false" />
+          <Property Name="authorizationid" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="authorizationname" Type="text" />
         </EntityType>
         <EntityType Name="bill">
@@ -355,7 +355,7 @@
           <Key>
             <PropertyRef Name="authorizationid" />
           </Key>
-          <Property Name="authorizationid" Type="Int32" Nullable="false" />
+          <Property Name="authorizationid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="authorizationname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="administrators" Relationship="Self.administrators_authorizations" FromRole="authorizations" ToRole="administrators" />
         </EntityType>
