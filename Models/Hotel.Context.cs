@@ -34,5 +34,6 @@ namespace HotelBooking.Models
         public virtual DbSet<street> streets { get; set; }
         public virtual DbSet<ticket> tickets { get; set; }
         public virtual DbSet<user> users { get; set; }
+        public virtual DbSet<destination> destinations { get; set; }
     }
 }

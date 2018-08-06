@@ -24,6 +24,8 @@
         <AssociationConnector Association="HOTELModel.administrators_authorizations" ManuallyRouted="false" />
         <AssociationConnector Association="HOTELModel.city_district" ManuallyRouted="false" />
         <AssociationConnector Association="HOTELModel.city_street" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HOTELModel.destination" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="HOTELModel.destinations_city_fk" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

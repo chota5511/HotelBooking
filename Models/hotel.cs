@@ -27,6 +27,7 @@ namespace HotelBooking.Models
         public int districtid { get; set; }
         public int cityid { get; set; }
         public decimal unitprice { get; set; }
+        public decimal phonenumber { get; set; }
     
         public virtual city city { get; set; }
         public virtual district district { get; set; }

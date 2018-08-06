@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="HOTELModel.Store" Provider="Npgsql" ProviderManifestToken="10.4" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="HOTELModel.Store" Provider="Npgsql" ProviderManifestToken="10.4" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="administrators">
           <Key>
             <PropertyRef Name="administratorid" />
@@ -64,6 +64,15 @@
           <Property Name="cityid" Type="int4" Nullable="false" />
           <Property Name="streetid" Type="int4" Nullable="false" />
         </EntityType>
+        <EntityType Name="destinations">
+          <Key>
+            <PropertyRef Name="destinationid" />
+          </Key>
+          <Property Name="destinationid" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="destinationname" Type="bpchar" MaxLength="50" />
+          <Property Name="cityid" Type="int4" />
+          <Property Name="description" Type="text" />
+        </EntityType>
         <EntityType Name="district">
           <Key>
             <PropertyRef Name="districtid" />
@@ -82,6 +91,7 @@
           <Property Name="districtid" Type="int4" Nullable="false" />
           <Property Name="cityid" Type="int4" Nullable="false" />
           <Property Name="unitprice" Type="numeric" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="phonenumber" Type="numeric" Precision="19" Scale="4" Nullable="false" />
         </EntityType>
         <EntityType Name="street">
           <Key>
@@ -183,6 +193,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="destinations_city_fk">
+          <End Role="city" Type="Self.city" Multiplicity="0..1" />
+          <End Role="destinations" Type="Self.destinations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="city">
+              <PropertyRef Name="cityid" />
+            </Principal>
+            <Dependent Role="destinations">
+              <PropertyRef Name="cityid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="district_city_district_fk">
           <End Role="district" Type="Self.district" Multiplicity="1" />
           <End Role="city_district" Type="Self.city_district" Multiplicity="*" />
@@ -275,6 +297,7 @@
           <EntitySet Name="city" EntityType="Self.city" Schema="public" store:Type="Tables" />
           <EntitySet Name="city_district" EntityType="Self.city_district" Schema="public" store:Type="Tables" />
           <EntitySet Name="city_street" EntityType="Self.city_street" Schema="public" store:Type="Tables" />
+          <EntitySet Name="destinations" EntityType="Self.destinations" Schema="public" store:Type="Tables" />
           <EntitySet Name="district" EntityType="Self.district" Schema="public" store:Type="Tables" />
           <EntitySet Name="hotel" EntityType="Self.hotel" Schema="public" store:Type="Tables" />
           <EntitySet Name="street" EntityType="Self.street" Schema="public" store:Type="Tables" />
@@ -303,6 +326,10 @@
           <AssociationSet Name="city_hotel_fk" Association="Self.city_hotel_fk">
             <End Role="city" EntitySet="city" />
             <End Role="hotel" EntitySet="hotel" />
+          </AssociationSet>
+          <AssociationSet Name="destinations_city_fk" Association="Self.destinations_city_fk">
+            <End Role="city" EntitySet="city" />
+            <End Role="destinations" EntitySet="destinations" />
           </AssociationSet>
           <AssociationSet Name="district_city_district_fk" Association="Self.district_city_district_fk">
             <End Role="district" EntitySet="district" />
@@ -333,8 +360,7 @@
             <End Role="ticket" EntitySet="ticket" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="HOTELModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -380,6 +406,7 @@
           <NavigationProperty Name="hotels" Relationship="Self.city_hotel_fk" FromRole="city" ToRole="hotel" />
           <NavigationProperty Name="districts" Relationship="Self.city_district" FromRole="city" ToRole="district" />
           <NavigationProperty Name="streets" Relationship="Self.city_street" FromRole="city" ToRole="street" />
+          <NavigationProperty Name="destinations" Relationship="HOTELModel.destinations_city_fk" FromRole="city" ToRole="destination" />
         </EntityType>
         <EntityType Name="district">
           <Key>
@@ -405,6 +432,7 @@
           <NavigationProperty Name="district" Relationship="Self.district_hotel_fk" FromRole="hotel" ToRole="district" />
           <NavigationProperty Name="tickets" Relationship="Self.hotel_ticket_fk" FromRole="hotel" ToRole="ticket" />
           <NavigationProperty Name="street" Relationship="Self.street_hotel_fk" FromRole="hotel" ToRole="street" />
+          <Property Name="phonenumber" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
         </EntityType>
         <EntityType Name="street">
           <Key>
@@ -586,7 +614,34 @@
             <End Role="city" EntitySet="cities" />
             <End Role="street" EntitySet="streets" />
           </AssociationSet>
+          <EntitySet Name="destinations" EntityType="HOTELModel.destination" />
+          <AssociationSet Name="destinations_city_fk" Association="HOTELModel.destinations_city_fk">
+            <End Role="city" EntitySet="cities" />
+            <End Role="destination" EntitySet="destinations" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="destination">
+          <Key>
+            <PropertyRef Name="destinationid" />
+          </Key>
+          <Property Name="destinationid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="destinationname" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="cityid" Type="Int32" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="city" Relationship="HOTELModel.destinations_city_fk" FromRole="destination" ToRole="city" />
+        </EntityType>
+        <Association Name="destinations_city_fk">
+          <End Type="HOTELModel.city" Role="city" Multiplicity="0..1" />
+          <End Type="HOTELModel.destination" Role="destination" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="city">
+              <PropertyRef Name="cityid" />
+            </Principal>
+            <Dependent Role="destination">
+              <PropertyRef Name="cityid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -643,6 +698,7 @@
           <EntitySetMapping Name="hotels">
             <EntityTypeMapping TypeName="HOTELModel.hotel">
               <MappingFragment StoreEntitySet="hotel">
+                <ScalarProperty Name="phonenumber" ColumnName="phonenumber" />
                 <ScalarProperty Name="hotelid" ColumnName="hotelid" />
                 <ScalarProperty Name="hotelname" ColumnName="hotelname" />
                 <ScalarProperty Name="addressnumber" ColumnName="addressnumber" />
@@ -708,6 +764,16 @@
               <ScalarProperty Name="streetid" ColumnName="streetid" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="destinations">
+            <EntityTypeMapping TypeName="HOTELModel.destination">
+              <MappingFragment StoreEntitySet="destinations">
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="cityid" ColumnName="cityid" />
+                <ScalarProperty Name="destinationname" ColumnName="destinationname" />
+                <ScalarProperty Name="destinationid" ColumnName="destinationid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

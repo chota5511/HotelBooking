@@ -20,6 +20,7 @@ namespace HotelBooking.Models
             this.hotels = new HashSet<hotel>();
             this.districts = new HashSet<district>();
             this.streets = new HashSet<street>();
+            this.destinations = new HashSet<destination>();
         }
     
         public int cityid { get; set; }
@@ -31,5 +32,7 @@ namespace HotelBooking.Models
         public virtual ICollection<district> districts { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<street> streets { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<destination> destinations { get; set; }
     }
 }
