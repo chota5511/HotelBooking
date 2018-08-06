@@ -189,6 +189,9 @@
     <Compile Include="Models\city.cs">
       <DependentUpon>Hotel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\destination.cs">
+      <DependentUpon>Hotel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\district.cs">
       <DependentUpon>Hotel.tt</DependentUpon>
     </Compile>
