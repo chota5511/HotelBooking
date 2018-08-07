@@ -42,6 +42,7 @@
     <NavigationProperty Name="hotels" Relationship="Self.city_hotel_fk" FromRole="city" ToRole="hotel" />
     <NavigationProperty Name="districts" Relationship="Self.city_district" FromRole="city" ToRole="district" />
     <NavigationProperty Name="streets" Relationship="Self.city_street" FromRole="city" ToRole="street" />
+    <NavigationProperty Name="destinations" Relationship="HOTELModel.destinations_city_fk" FromRole="city" ToRole="destination" />
   </EntityType>
   <EntityType Name="district">
     <Key>
@@ -67,6 +68,7 @@
     <NavigationProperty Name="district" Relationship="Self.district_hotel_fk" FromRole="hotel" ToRole="district" />
     <NavigationProperty Name="tickets" Relationship="Self.hotel_ticket_fk" FromRole="hotel" ToRole="ticket" />
     <NavigationProperty Name="street" Relationship="Self.street_hotel_fk" FromRole="hotel" ToRole="street" />
+    <Property Name="phonenumber" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
   </EntityType>
   <EntityType Name="street">
     <Key>
@@ -248,5 +250,32 @@
       <End Role="city" EntitySet="cities" />
       <End Role="street" EntitySet="streets" />
     </AssociationSet>
+    <EntitySet Name="destinations" EntityType="HOTELModel.destination" />
+    <AssociationSet Name="destinations_city_fk" Association="HOTELModel.destinations_city_fk">
+      <End Role="city" EntitySet="cities" />
+      <End Role="destination" EntitySet="destinations" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="destination">
+    <Key>
+      <PropertyRef Name="destinationid" />
+    </Key>
+    <Property Name="destinationid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="destinationname" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="cityid" Type="Int32" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="city" Relationship="HOTELModel.destinations_city_fk" FromRole="destination" ToRole="city" />
+  </EntityType>
+  <Association Name="destinations_city_fk">
+    <End Type="HOTELModel.city" Role="city" Multiplicity="0..1" />
+    <End Type="HOTELModel.destination" Role="destination" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="city">
+        <PropertyRef Name="cityid" />
+      </Principal>
+      <Dependent Role="destination">
+        <PropertyRef Name="cityid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

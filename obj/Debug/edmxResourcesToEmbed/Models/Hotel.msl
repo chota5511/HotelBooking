@@ -51,6 +51,7 @@
     <EntitySetMapping Name="hotels">
       <EntityTypeMapping TypeName="HOTELModel.hotel">
         <MappingFragment StoreEntitySet="hotel">
+          <ScalarProperty Name="phonenumber" ColumnName="phonenumber" />
           <ScalarProperty Name="hotelid" ColumnName="hotelid" />
           <ScalarProperty Name="hotelname" ColumnName="hotelname" />
           <ScalarProperty Name="addressnumber" ColumnName="addressnumber" />
@@ -116,5 +117,15 @@
         <ScalarProperty Name="streetid" ColumnName="streetid" />
       </EndProperty>
     </AssociationSetMapping>
+    <EntitySetMapping Name="destinations">
+      <EntityTypeMapping TypeName="HOTELModel.destination">
+        <MappingFragment StoreEntitySet="destinations">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="cityid" ColumnName="cityid" />
+          <ScalarProperty Name="destinationname" ColumnName="destinationname" />
+          <ScalarProperty Name="destinationid" ColumnName="destinationid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

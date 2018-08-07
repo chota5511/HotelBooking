@@ -11,24 +11,51 @@ namespace HotelBooking.Areas.Admin.Controllers
     public class AdminController : Controller
     {
         HOTELEntities db = new HOTELEntities();
+
+        //Function here
+        public bool isLogined()
+        {
+            if (Session["UserName"] == null || Session["Password"] == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
         public ActionResult Login()
         {
+            if (isLogined() == true)
+            {
+                return RedirectToAction("Index", "Admin");
+            }
             return View();
         }
         // GET: Admin/Admin
         public ActionResult Index(string id,string password)
         {
-            foreach (administrator a in db.administrators)
+            //Check if Session is available
+            if(isLogined() == false)
             {
-                if (id == a.administratorid.Replace(" ",string.Empty))
+                foreach (administrator a in db.administrators)
                 {
-                    if (password == a.administratorpassword.Replace(" ",string.Empty))
+                    //Check user's id and password
+                    if (id == a.administratorid.Replace(" ", string.Empty))
                     {
-                        return View();
+                        if (password == a.administratorpassword.Replace(" ", string.Empty))
+                        {
+                            Session["UserID"] = id;
+                            Session["UserPassword"] = password;
+                            return View();
+                        }
                     }
                 }
+                return RedirectToAction("Login", "Admin");
             }
-            return RedirectToAction("Login","Admin");
+            return RedirectToAction("Index", "Admin");
         }
     }
 }

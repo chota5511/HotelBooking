@@ -59,6 +59,15 @@
     <Property Name="cityid" Type="int4" Nullable="false" />
     <Property Name="streetid" Type="int4" Nullable="false" />
   </EntityType>
+  <EntityType Name="destinations">
+    <Key>
+      <PropertyRef Name="destinationid" />
+    </Key>
+    <Property Name="destinationid" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="destinationname" Type="bpchar" MaxLength="50" />
+    <Property Name="cityid" Type="int4" />
+    <Property Name="description" Type="text" />
+  </EntityType>
   <EntityType Name="district">
     <Key>
       <PropertyRef Name="districtid" />
@@ -77,6 +86,7 @@
     <Property Name="districtid" Type="int4" Nullable="false" />
     <Property Name="cityid" Type="int4" Nullable="false" />
     <Property Name="unitprice" Type="numeric" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="phonenumber" Type="numeric" Precision="19" Scale="4" Nullable="false" />
   </EntityType>
   <EntityType Name="street">
     <Key>
@@ -178,6 +188,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="destinations_city_fk">
+    <End Role="city" Type="Self.city" Multiplicity="0..1" />
+    <End Role="destinations" Type="Self.destinations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="city">
+        <PropertyRef Name="cityid" />
+      </Principal>
+      <Dependent Role="destinations">
+        <PropertyRef Name="cityid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="district_city_district_fk">
     <End Role="district" Type="Self.district" Multiplicity="1" />
     <End Role="city_district" Type="Self.city_district" Multiplicity="*" />
@@ -270,6 +292,7 @@
     <EntitySet Name="city" EntityType="Self.city" Schema="public" store:Type="Tables" />
     <EntitySet Name="city_district" EntityType="Self.city_district" Schema="public" store:Type="Tables" />
     <EntitySet Name="city_street" EntityType="Self.city_street" Schema="public" store:Type="Tables" />
+    <EntitySet Name="destinations" EntityType="Self.destinations" Schema="public" store:Type="Tables" />
     <EntitySet Name="district" EntityType="Self.district" Schema="public" store:Type="Tables" />
     <EntitySet Name="hotel" EntityType="Self.hotel" Schema="public" store:Type="Tables" />
     <EntitySet Name="street" EntityType="Self.street" Schema="public" store:Type="Tables" />
@@ -298,6 +321,10 @@
     <AssociationSet Name="city_hotel_fk" Association="Self.city_hotel_fk">
       <End Role="city" EntitySet="city" />
       <End Role="hotel" EntitySet="hotel" />
+    </AssociationSet>
+    <AssociationSet Name="destinations_city_fk" Association="Self.destinations_city_fk">
+      <End Role="city" EntitySet="city" />
+      <End Role="destinations" EntitySet="destinations" />
     </AssociationSet>
     <AssociationSet Name="district_city_district_fk" Association="Self.district_city_district_fk">
       <End Role="district" EntitySet="district" />
