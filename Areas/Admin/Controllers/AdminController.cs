@@ -15,7 +15,7 @@ namespace HotelBooking.Areas.Admin.Controllers
         //Function here
         public bool isLogined()
         {
-            if (Session["UserName"] == null || Session["Password"] == null)
+            if (Session[CommonConstant.USER_ID] == null || Session[CommonConstant.USER_PASSWORD] == null)
             {
                 return false;
             }
@@ -47,15 +47,15 @@ namespace HotelBooking.Areas.Admin.Controllers
                     {
                         if (password == a.administratorpassword.Replace(" ", string.Empty))
                         {
-                            Session["UserID"] = id;
-                            Session["UserPassword"] = password;
+                            Session.Add(CommonConstant.USER_ID,id);
+                            Session.Add(CommonConstant.USER_PASSWORD,password);
                             return View();
                         }
                     }
                 }
                 return RedirectToAction("Login", "Admin");
             }
-            return RedirectToAction("Index", "Admin");
+            return View();
         }
     }
 }
