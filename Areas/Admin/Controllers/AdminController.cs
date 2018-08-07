@@ -25,7 +25,7 @@ namespace HotelBooking.Areas.Admin.Controllers
             }
         }
 
-
+        //Login Admin
         public ActionResult Login()
         {
             if (isLogined() == true)
@@ -34,6 +34,15 @@ namespace HotelBooking.Areas.Admin.Controllers
             }
             return View();
         }
+
+        //Logout Admin
+        public ActionResult Logout()
+        {
+            Session[CommonConstant.USER_ID] = null;
+            Session[CommonConstant.USER_PASSWORD] = null;
+            return RedirectToAction("Index", "Admin");
+        }
+
         // GET: Admin/Admin
         public ActionResult Index(string id,string password)
         {
