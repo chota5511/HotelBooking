@@ -228,6 +228,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Admin\Content\css\font-face.css" />
+    <Content Include="Areas\Admin\Content\css\style.css" />
     <Content Include="Areas\Admin\Content\css\theme.css" />
     <Content Include="Areas\Admin\Content\fonts\poppins\poppins-v5-latin-100.svg" />
     <Content Include="Areas\Admin\Content\fonts\poppins\poppins-v5-latin-100italic.svg" />
@@ -694,7 +695,7 @@
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Login.cshtml" />
-    <Content Include="Areas\Admin\Views\Admin\DBTable.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\Ticket.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\TicketTable.cshtml" />
     <EntityDeploy Include="Models\Hotel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

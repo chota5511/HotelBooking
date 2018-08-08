@@ -30,12 +30,55 @@ namespace HotelBooking.Areas.Admin.Controllers
             }
         }
 
+        //Login process
+        public bool isLoginSucess(string id,string password)
+        {
+            //Check user's id and password
+            foreach(administrator a in db.administrators)
+            {
+                if(a.administratorpassword.Replace(" ","") == id)
+                {
+                    if(a.administratorpassword.Replace(" ","") == password)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
         //Login Admin: Admin/Admin/Login
-        public ActionResult Login()
+        public ActionResult Login(string id, string password)
         {
             if (isLogined() == true)
             {
                 return RedirectToAction("Index", "Admin");
+            }
+            else if(id != null || password != null)
+            {
+                if (isLoginSucess(id, password) == true)
+                {
+                    Session[CommonConstant.MESSAGE] = null;
+                    Session.Add(CommonConstant.ADMIN_ID, id);
+                    Session.Add(CommonConstant.ADMIN_PASSWORD, password);
+                    //Check if Admin's Avatar is exist
+                    if (System.IO.File.Exists(
+                        HttpContext.Server.MapPath(
+                            "~/Areas/Admin/Content/images/avatar/" + Session[CommonConstant.ADMIN_ID] + ".png")))
+                    {
+                        Session[CommonConstant.ADMIN_AVATAR] = string.Format(Session[CommonConstant.ADMIN_ID] + ".png");
+                    }
+                    else
+                    {
+                        //If not exist show the default avatar
+                        Session[CommonConstant.ADMIN_AVATAR] = "default/_Default.png";
+                    }
+                    return RedirectToAction("Index", "Admin");
+                }
+                else
+                {
+                    Session[CommonConstant.MESSAGE] = "UserID or Password is not match.";
+                }
             }
             return View();
         }
@@ -54,38 +97,12 @@ namespace HotelBooking.Areas.Admin.Controllers
             //Check if Session is available
             if(isLogined() == false)
             {
-                //Login process
-                foreach (administrator a in db.administrators)
-                {
-                    //Check user's id and password
-                    if (id == a.administratorid.Replace(" ", string.Empty))
-                    {
-                        if (password.Replace(" ",string.Empty) == a.administratorpassword.Replace(" ", string.Empty))
-                        {
-                            Session.Add(CommonConstant.ADMIN_ID,id);
-                            Session.Add(CommonConstant.ADMIN_PASSWORD,password);
-                            //Check if Admin's Avatar is exist
-                            if (System.IO.File.Exists(
-                                HttpContext.Server.MapPath(
-                                    "~/Areas/Admin/Content/images/avatar/" + Session[CommonConstant.ADMIN_ID] + ".png")))
-                            {
-                                Session[CommonConstant.ADMIN_AVATAR] = string.Format(Session[CommonConstant.ADMIN_ID] + ".png");
-                            }
-                            else
-                            {
-                                //If not exist show the default avatar
-                                Session[CommonConstant.ADMIN_AVATAR] = "default/_Default.png";
-                            }
-                            return View();
-                        }
-                    }
-                }
                 return RedirectToAction("Login", "Admin");
             }
             return View();
         }
 
-        public ActionResult DBTable()
+        public ActionResult Ticket()
         {
             if(isLogined() == false)
             {
@@ -101,7 +118,7 @@ namespace HotelBooking.Areas.Admin.Controllers
             {
                 return RedirectToAction("Index", "Admin");
             }
-            List<TicketView> tickets = TicketView.PullTicket(10);
+            List<TicketView> tickets = TicketView.PullTicket(db.tickets.Count());
             return PartialView(tickets);
         } 
     }

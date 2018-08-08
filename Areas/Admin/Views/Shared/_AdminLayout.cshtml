@@ -27,6 +27,9 @@
     <link href="~/Areas/Admin/Content/vendor/vector-map/jqvmap.min.css" rel="stylesheet" media="all">
     <!-- Main CSS-->
     <link href="~/Areas/Admin/Content/css/theme.css" rel="stylesheet" media="all">
+    <!--style.css -->
+    <link href="~/Content/css/style.css" rel="stylesheet">
+
 </head>
 <body class="animsition">
     <div class="page-wrapper">
@@ -40,10 +43,10 @@
             <div class="menu-sidebar2__content js-scrollbar1">
                 <div class="account2">
                     <div class="image img-cir img-120">
-                        <img src="~/Areas/Admin/Content/images/avatar/@Session[CommonConstant.ADMIN_AVATAR]" alt="John Doe" style="height:120px;width:120px;object-fit:cover"/>
+                        <img src="~/Areas/Admin/Content/images/avatar/@Session[CommonConstant.ADMIN_AVATAR]" alt="John Doe" style="height:120px;width:120px;object-fit:cover" />
                     </div>
                     <h4 class="name">@Session[CommonConstant.ADMIN_ID]</h4>
-                    <a href="@Url.Action("Logout","Admin")">Sign out</a>
+                    <a href="#Logout" data-toggle="modal">Sign out</a>
                 </div>
                 <nav class="navbar-sidebar2">
                     <ul class="list-unstyled navbar__list">
@@ -79,41 +82,46 @@
                         </li>
                         <li>
                             <a href="inbox.html">
-                                <i class="fas fa-chart-bar"></i>Inbox
+                                <i class="fas fa-comment"></i>Inbox
                             </a>
                             <span class="inbox-num">3</span>
                         </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-shopping-basket"></i>eCommerce
-                            </a>
-                        </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-trophy"></i>Features
+                                <i class="fas fa-table"></i>Tables
                                 <span class="arrow">
                                     <i class="fas fa-angle-down"></i>
                                 </span>
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="@Url.Action("DBTable","Admin")">
-                                        <i class="fas fa-table"></i>Tables
+                                    <a href="@Url.Action("Ticket","Admin")">
+                                        <i class="fas fa-credit-card"></i>Tickets
                                     </a>
                                 </li>
                                 <li>
                                     <a href="form.html">
-                                        <i class="far fa-check-square"></i>Forms
+                                        <i class="far fa-user"></i>Users
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fas fa-calendar-alt"></i>Calendar
+                                        <i class="fas fa-desktop"></i>Administrators
                                     </a>
                                 </li>
                                 <li>
                                     <a href="map.html">
-                                        <i class="fas fa-map-marker-alt"></i>Maps
+                                        <i class="fas fa-home"></i>Hotel
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="map.html">
+                                        <i class="fas fa-map-marker-alt"></i>Citys
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="map.html">
+                                        <i class="fas fa-location-arrow"></i>Destinations
                                     </a>
                                 </li>
                             </ul>
@@ -325,10 +333,71 @@
                 </div>
             </header>
             @RenderBody()
+            <section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- END PAGE CONTAINER-->
         </div>
-
     </div>
+
+    <!-- MODAL START -->
+    <div class="modal fade" id="Logout" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true"
+         data-backdrop="static">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticModalLabel">Sign out</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        You are going to sign out.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Logout","Admin")'">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="ConfigModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true"
+         data-backdrop="static">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticModalLabel">Static Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        This is a static modal, backdrop click will not close it.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL END -->
+
     <!-- Jquery JS-->
     <script src="~/Areas/Admin/Content/vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->

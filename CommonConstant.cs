@@ -14,5 +14,9 @@ namespace HotelBooking
         public const string USER_ID = "UserID";
         public const string USER_PASSWORD = "UserPassword";
         public const string USER_AVATAR = "UserAvatar";
+
+
+
+        public const string MESSAGE = "Message";
     }
 }
