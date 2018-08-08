@@ -13,6 +13,11 @@ namespace HotelBooking.Controllers
             return View();
         }
 
+        public ActionResult Destination()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

@@ -64,6 +64,18 @@ namespace HotelBooking.Areas.Admin.Controllers
                         {
                             Session.Add(CommonConstant.ADMIN_ID,id);
                             Session.Add(CommonConstant.ADMIN_PASSWORD,password);
+                            //Check if Admin's Avatar is exist
+                            if (System.IO.File.Exists(
+                                HttpContext.Server.MapPath(
+                                    "~/Areas/Admin/Content/images/avatar/" + Session[CommonConstant.ADMIN_ID] + ".png")))
+                            {
+                                Session[CommonConstant.ADMIN_AVATAR] = string.Format(Session[CommonConstant.ADMIN_ID] + ".png");
+                            }
+                            else
+                            {
+                                //If not exist show the default avatar
+                                Session[CommonConstant.ADMIN_AVATAR] = "default/_Default.png";
+                            }
                             return View();
                         }
                     }

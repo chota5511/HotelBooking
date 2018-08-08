@@ -247,6 +247,7 @@
     <Content Include="Areas\Admin\Content\fonts\poppins\poppins-v5-latin-900italic.svg" />
     <Content Include="Areas\Admin\Content\fonts\poppins\poppins-v5-latin-italic.svg" />
     <Content Include="Areas\Admin\Content\fonts\poppins\poppins-v5-latin-regular.svg" />
+    <Content Include="Areas\Admin\Content\images\avatar\admin.png" />
     <Content Include="Areas\Admin\Content\images\bg-title-01.jpg" />
     <Content Include="Areas\Admin\Content\images\bg-title-02.jpg" />
     <Content Include="Areas\Admin\Content\images\icon\avatar-01.jpg" />
@@ -367,6 +368,7 @@
     <Content Include="Content\img\best-tour-packages-top-hp3-1.jpg" />
     <Content Include="Content\img\best-tour-packages-top-hp3-2.jpg" />
     <Content Include="Content\img\best-tour-packages-top-hp3-3.jpg" />
+    <Content Include="Content\img\bien2.jpeg" />
     <Content Include="Content\img\big-car-1.jpg" />
     <Content Include="Content\img\big-flight-img.jpg" />
     <Content Include="Content\img\blog-medium-img1.jpg" />
@@ -398,6 +400,7 @@
     <Content Include="Content\img\counter-up-img1.png" />
     <Content Include="Content\img\counter-up-img3.png" />
     <Content Include="Content\img\counter-up-img4.png" />
+    <Content Include="Content\img\Dalat.jpg" />
     <Content Include="Content\img\destination-honeymoon-bg1.jpg" />
     <Content Include="Content\img\destination-honeymoon-bg2.jpg" />
     <Content Include="Content\img\destination-honeymoon-bg3.jpg" />
@@ -423,6 +426,9 @@
     <Content Include="Content\img\flug-5.png" />
     <Content Include="Content\img\footer-logo-hp2.png" />
     <Content Include="Content\img\footer-logo.png" />
+    <Content Include="Content\img\Halongbay.jpg" />
+    <Content Include="Content\img\Hcmcity.jpg" />
+    <Content Include="Content\img\Hoian.jpg" />
     <Content Include="Content\img\holiday-packages-item-bg1.jpg" />
     <Content Include="Content\img\holiday-packages-item-bg2.jpg" />
     <Content Include="Content\img\hotel-details-1.jpg" />
@@ -460,15 +466,19 @@
     <Content Include="Content\img\hp3-footer-logo.png" />
     <Content Include="Content\img\hp3-logo.png" />
     <Content Include="Content\img\hp3-slider-bg.jpg" />
+    <Content Include="Content\img\Hue.jpg" />
     <Content Include="Content\img\img-01.jpg" />
     <Content Include="Content\img\img-02.jpg" />
     <Content Include="Content\img\img-03.jpg" />
     <Content Include="Content\img\login-page-bg.jpg" />
     <Content Include="Content\img\logo-hp2.png" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\Muine.jpg" />
     <Content Include="Content\img\need-travel-help-bg.jpg" />
+    <Content Include="Content\img\Nhatrangbeach.jpg" />
     <Content Include="Content\img\page-title-bg.jpg" />
     <Content Include="Content\img\photo-1499814375754-a481db8ab6c5.jpg" />
+    <Content Include="Content\img\Phuquoc.jpeg" />
     <Content Include="Content\img\popular-destinations-hp3-image1.jpg" />
     <Content Include="Content\img\recent-post-img1.jpg" />
     <Content Include="Content\img\recent-post-img2.jpg" />
@@ -523,6 +533,8 @@
     <Content Include="Content\img\team-person-7.png" />
     <Content Include="Content\img\team-person-8.png" />
     <Content Include="Content\img\top-destination-area-bg.jpg" />
+    <Content Include="Content\img\topproof1.jpg" />
+    <Content Include="Content\img\topproof2.jpg" />
     <Content Include="Content\img\tours-details-gallery-single1.jpg" />
     <Content Include="Content\img\tours-details-gallery-single2.jpg" />
     <Content Include="Content\img\tours-details-gallery-single3.jpg" />
@@ -718,6 +730,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\TopDestination.cshtml" />
     <Content Include="Views\Home\SectionSeaToursArea.cshtml" />
+    <Content Include="Views\Home\Destination.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
