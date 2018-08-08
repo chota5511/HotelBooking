@@ -30,7 +30,7 @@
     <Key>
       <PropertyRef Name="billid" />
     </Key>
-    <Property Name="billid" Type="int4" Nullable="false" />
+    <Property Name="billid" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="billdate" Type="date" Nullable="false" />
     <Property Name="dateend" Type="date" Nullable="false" />
     <Property Name="ticketid" Type="int4" Nullable="false" />
@@ -79,7 +79,7 @@
     <Key>
       <PropertyRef Name="hotelid" />
     </Key>
-    <Property Name="hotelid" Type="int4" Nullable="false" />
+    <Property Name="hotelid" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="hotelname" Type="bpchar" MaxLength="50" />
     <Property Name="addressnumber" Type="bpchar" MaxLength="20" Nullable="false" />
     <Property Name="streetid" Type="int4" Nullable="false" />
@@ -99,7 +99,7 @@
     <Key>
       <PropertyRef Name="ticketid" />
     </Key>
-    <Property Name="ticketid" Type="int4" Nullable="false" />
+    <Property Name="ticketid" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ticketdate" Type="date" Nullable="false" />
     <Property Name="datestart" Type="date" Nullable="false" />
     <Property Name="expectdateend" Type="date" />

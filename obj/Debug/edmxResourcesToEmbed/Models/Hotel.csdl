@@ -25,7 +25,7 @@
     <Key>
       <PropertyRef Name="billid" />
     </Key>
-    <Property Name="billid" Type="Int32" Nullable="false" />
+    <Property Name="billid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="billdate" Type="DateTime" Precision="0" Nullable="false" />
     <Property Name="dateend" Type="DateTime" Precision="0" Nullable="false" />
     <Property Name="ticketid" Type="Int32" Nullable="false" />
@@ -40,9 +40,19 @@
     <Property Name="cityid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="cityname" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
     <NavigationProperty Name="hotels" Relationship="Self.city_hotel_fk" FromRole="city" ToRole="hotel" />
+    <NavigationProperty Name="destinations" Relationship="Self.destinations_city_fk" FromRole="city" ToRole="destinations" />
     <NavigationProperty Name="districts" Relationship="Self.city_district" FromRole="city" ToRole="district" />
     <NavigationProperty Name="streets" Relationship="Self.city_street" FromRole="city" ToRole="street" />
-    <NavigationProperty Name="destinations" Relationship="HOTELModel.destinations_city_fk" FromRole="city" ToRole="destination" />
+  </EntityType>
+  <EntityType Name="destination">
+    <Key>
+      <PropertyRef Name="destinationid" />
+    </Key>
+    <Property Name="destinationid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="destinationname" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="cityid" Type="Int32" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="city" Relationship="Self.destinations_city_fk" FromRole="destinations" ToRole="city" />
   </EntityType>
   <EntityType Name="district">
     <Key>
@@ -57,18 +67,18 @@
     <Key>
       <PropertyRef Name="hotelid" />
     </Key>
-    <Property Name="hotelid" Type="Int32" Nullable="false" />
+    <Property Name="hotelid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="hotelname" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
     <Property Name="addressnumber" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="streetid" Type="Int32" Nullable="false" />
     <Property Name="districtid" Type="Int32" Nullable="false" />
     <Property Name="cityid" Type="Int32" Nullable="false" />
     <Property Name="unitprice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="phonenumber" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <NavigationProperty Name="city" Relationship="Self.city_hotel_fk" FromRole="hotel" ToRole="city" />
     <NavigationProperty Name="district" Relationship="Self.district_hotel_fk" FromRole="hotel" ToRole="district" />
     <NavigationProperty Name="tickets" Relationship="Self.hotel_ticket_fk" FromRole="hotel" ToRole="ticket" />
     <NavigationProperty Name="street" Relationship="Self.street_hotel_fk" FromRole="hotel" ToRole="street" />
-    <Property Name="phonenumber" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
   </EntityType>
   <EntityType Name="street">
     <Key>
@@ -83,7 +93,7 @@
     <Key>
       <PropertyRef Name="ticketid" />
     </Key>
-    <Property Name="ticketid" Type="Int32" Nullable="false" />
+    <Property Name="ticketid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="ticketdate" Type="DateTime" Precision="0" Nullable="false" />
     <Property Name="datestart" Type="DateTime" Precision="0" Nullable="false" />
     <Property Name="expectdateend" Type="DateTime" Precision="0" />
@@ -136,6 +146,18 @@
         <PropertyRef Name="cityid" />
       </Principal>
       <Dependent Role="hotel">
+        <PropertyRef Name="cityid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="destinations_city_fk">
+    <End Role="city" Type="Self.city" Multiplicity="0..1" />
+    <End Role="destinations" Type="Self.destination" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="city">
+        <PropertyRef Name="cityid" />
+      </Principal>
+      <Dependent Role="destinations">
         <PropertyRef Name="cityid" />
       </Dependent>
     </ReferentialConstraint>
@@ -205,6 +227,7 @@
     <EntitySet Name="authorizations" EntityType="Self.authorization" />
     <EntitySet Name="bills" EntityType="Self.bill" />
     <EntitySet Name="cities" EntityType="Self.city" />
+    <EntitySet Name="destinations" EntityType="Self.destination" />
     <EntitySet Name="districts" EntityType="Self.district" />
     <EntitySet Name="hotels" EntityType="Self.hotel" />
     <EntitySet Name="streets" EntityType="Self.street" />
@@ -221,6 +244,10 @@
     <AssociationSet Name="city_hotel_fk" Association="Self.city_hotel_fk">
       <End Role="city" EntitySet="cities" />
       <End Role="hotel" EntitySet="hotels" />
+    </AssociationSet>
+    <AssociationSet Name="destinations_city_fk" Association="Self.destinations_city_fk">
+      <End Role="city" EntitySet="cities" />
+      <End Role="destinations" EntitySet="destinations" />
     </AssociationSet>
     <AssociationSet Name="district_hotel_fk" Association="Self.district_hotel_fk">
       <End Role="district" EntitySet="districts" />
@@ -250,32 +277,5 @@
       <End Role="city" EntitySet="cities" />
       <End Role="street" EntitySet="streets" />
     </AssociationSet>
-    <EntitySet Name="destinations" EntityType="HOTELModel.destination" />
-    <AssociationSet Name="destinations_city_fk" Association="HOTELModel.destinations_city_fk">
-      <End Role="city" EntitySet="cities" />
-      <End Role="destination" EntitySet="destinations" />
-    </AssociationSet>
   </EntityContainer>
-  <EntityType Name="destination">
-    <Key>
-      <PropertyRef Name="destinationid" />
-    </Key>
-    <Property Name="destinationid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="destinationname" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-    <Property Name="cityid" Type="Int32" />
-    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="city" Relationship="HOTELModel.destinations_city_fk" FromRole="destination" ToRole="city" />
-  </EntityType>
-  <Association Name="destinations_city_fk">
-    <End Type="HOTELModel.city" Role="city" Multiplicity="0..1" />
-    <End Type="HOTELModel.destination" Role="destination" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="city">
-        <PropertyRef Name="cityid" />
-      </Principal>
-      <Dependent Role="destination">
-        <PropertyRef Name="cityid" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
 </Schema>

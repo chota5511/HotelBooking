@@ -29,11 +29,11 @@ namespace HotelBooking.Models
         public virtual DbSet<authorization> authorizations { get; set; }
         public virtual DbSet<bill> bills { get; set; }
         public virtual DbSet<city> cities { get; set; }
+        public virtual DbSet<destination> destinations { get; set; }
         public virtual DbSet<district> districts { get; set; }
         public virtual DbSet<hotel> hotels { get; set; }
         public virtual DbSet<street> streets { get; set; }
         public virtual DbSet<ticket> tickets { get; set; }
         public virtual DbSet<user> users { get; set; }
-        public virtual DbSet<destination> destinations { get; set; }
     }
 }

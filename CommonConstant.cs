@@ -7,7 +7,7 @@ namespace HotelBooking
 {
     public static class CommonConstant
     {
-        public const string USER_ID = "UserID";
-        public const string USER_PASSWORD = "UserPassword";
+        public const string ADMIN_ID = "AdminID";
+        public const string ADMIN_PASSWORD = "AdminPassword";
     }
 }

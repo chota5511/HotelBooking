@@ -224,6 +224,7 @@
       <DependentUpon>Hotel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Admin\Content\css\font-face.css" />
@@ -681,6 +682,8 @@
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Login.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\DBTable.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\TicketTable.cshtml" />
     <EntityDeploy Include="Models\Hotel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Hotel.Designer.cs</LastGenOutput>
@@ -719,6 +722,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\DBTable\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

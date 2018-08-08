@@ -8,14 +8,19 @@ using HotelBooking.Models;
 
 namespace HotelBooking.Areas.Admin.Controllers
 {
+
     public class AdminController : Controller
     {
         HOTELEntities db = new HOTELEntities();
 
         //Function here
+        /// <summary>
+        /// Check session is logined or not
+        /// </summary>
+        /// <returns></returns>
         public bool isLogined()
         {
-            if (Session[CommonConstant.USER_ID] == null || Session[CommonConstant.USER_PASSWORD] == null)
+            if (Session[CommonConstant.ADMIN_ID] == null || Session[CommonConstant.ADMIN_PASSWORD] == null)
             {
                 return false;
             }
@@ -25,7 +30,7 @@ namespace HotelBooking.Areas.Admin.Controllers
             }
         }
 
-        //Login Admin
+        //Login Admin: Admin/Admin/Login
         public ActionResult Login()
         {
             if (isLogined() == true)
@@ -35,11 +40,11 @@ namespace HotelBooking.Areas.Admin.Controllers
             return View();
         }
 
-        //Logout Admin
+        //Logout Admin: Admin/Admin/Logout
         public ActionResult Logout()
         {
-            Session[CommonConstant.USER_ID] = null;
-            Session[CommonConstant.USER_PASSWORD] = null;
+            Session[CommonConstant.ADMIN_ID] = null;
+            Session[CommonConstant.ADMIN_PASSWORD] = null;
             return RedirectToAction("Index", "Admin");
         }
 
@@ -49,15 +54,16 @@ namespace HotelBooking.Areas.Admin.Controllers
             //Check if Session is available
             if(isLogined() == false)
             {
+                //Login process
                 foreach (administrator a in db.administrators)
                 {
                     //Check user's id and password
                     if (id == a.administratorid.Replace(" ", string.Empty))
                     {
-                        if (password == a.administratorpassword.Replace(" ", string.Empty))
+                        if (password.Replace(" ",string.Empty) == a.administratorpassword.Replace(" ", string.Empty))
                         {
-                            Session.Add(CommonConstant.USER_ID,id);
-                            Session.Add(CommonConstant.USER_PASSWORD,password);
+                            Session.Add(CommonConstant.ADMIN_ID,id);
+                            Session.Add(CommonConstant.ADMIN_PASSWORD,password);
                             return View();
                         }
                     }
@@ -66,5 +72,25 @@ namespace HotelBooking.Areas.Admin.Controllers
             }
             return View();
         }
+
+        public ActionResult DBTable()
+        {
+            if(isLogined() == false)
+            {
+                return RedirectToAction("Index", "Admin");
+            }
+            return View();
+        }
+
+        //PartialView here
+        public ActionResult TicketTable()
+        {
+            if (isLogined() == false)
+            {
+                return RedirectToAction("Index", "Admin");
+            }
+            List<TicketView> tickets = TicketView.PullTicket(10);
+            return PartialView(tickets);
+        } 
     }
 }

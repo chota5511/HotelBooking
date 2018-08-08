@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "DBTable";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                @Html.Action("TicketTable", "Admin")
+            </div>
+        </div>
+    </div>
+</div>
+
+
