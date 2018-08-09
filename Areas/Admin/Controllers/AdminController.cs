@@ -161,6 +161,7 @@ namespace HotelBooking.Areas.Admin.Controllers
             return View(db.users);
         }
 
+        //Search for User: Admin/Admin/SearchUsers
         public ActionResult SearchUsers(string info)
         {
             if (isLogined() == false || string.IsNullOrEmpty(info) == true)
