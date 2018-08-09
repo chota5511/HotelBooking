@@ -52,7 +52,7 @@ namespace HotelBooking.Areas.Admin.Controllers
         {
             if (isLogined() == true)
             {
-                return RedirectToAction("Index", "Admin");
+                return RedirectToAction("Dashboard", "Admin");
             }
             else if(id != null || password != null)
             {
@@ -73,7 +73,7 @@ namespace HotelBooking.Areas.Admin.Controllers
                         //If not exist show the default avatar
                         Session[CommonConstant.ADMIN_AVATAR] = "default/_Default.png";
                     }
-                    return RedirectToAction("Index", "Admin");
+                    return RedirectToAction("Dashboard", "Admin");
                 }
                 else
                 {
@@ -88,11 +88,11 @@ namespace HotelBooking.Areas.Admin.Controllers
         {
             Session[CommonConstant.ADMIN_ID] = null;
             Session[CommonConstant.ADMIN_PASSWORD] = null;
-            return RedirectToAction("Index", "Admin");
+            return RedirectToAction("Dashboard", "Admin");
         }
 
         // GET: Admin/Admin
-        public ActionResult Index(string id,string password)
+        public ActionResult Dashboard()
         {
             //Check if Session is available
             if(isLogined() == false)
@@ -109,7 +109,7 @@ namespace HotelBooking.Areas.Admin.Controllers
         {
             if (isLogined() == false || string.IsNullOrEmpty(info) == true)
             {
-                return RedirectToAction("Index", "Admin");
+                return RedirectToAction("Dashboard", "Admin");
             }
             List<TicketView> tickets = new List<TicketView>();
             foreach (ticket t in db.tickets)
@@ -135,7 +135,7 @@ namespace HotelBooking.Areas.Admin.Controllers
         {
             if (isLogined() == false)
             {
-                return RedirectToAction("Index", "Admin");
+                return RedirectToAction("Dashboard", "Admin");
             }
             List<TicketView> tickets = TicketView.PullTicket(db.tickets.Count());
             return View(tickets);

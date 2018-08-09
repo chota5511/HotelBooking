@@ -410,6 +410,7 @@
     <Content Include="Content\img\destination-honeymoon-bg4.jpg" />
     <Content Include="Content\img\destination-honeymoon-bg5.jpg" />
     <Content Include="Content\img\destination-honeymoon-bg6.jpg" />
+    <Content Include="Content\img\dg_160519_du-lich-da-nang.jpg" />
     <Content Include="Content\img\error-v2-bg.png" />
     <Content Include="Content\img\flight-details-logo-img.png" />
     <Content Include="Content\img\flight-list-1.jpg" />
@@ -429,7 +430,9 @@
     <Content Include="Content\img\flug-5.png" />
     <Content Include="Content\img\footer-logo-hp2.png" />
     <Content Include="Content\img\footer-logo.png" />
+    <Content Include="Content\img\ha-long.jpg" />
     <Content Include="Content\img\Halongbay.jpg" />
+    <Content Include="Content\img\Hanoi-by-Night-Hero-1.jpg" />
     <Content Include="Content\img\Hcmcity.jpg" />
     <Content Include="Content\img\Hoian.jpg" />
     <Content Include="Content\img\holiday-packages-item-bg1.jpg" />
@@ -695,7 +698,7 @@
     <Content Include="Areas\Admin\Content\vendor\slick\slick.less" />
     <Content Include="Areas\Admin\Content\vendor\slick\slick.scss" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
-    <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\Dashboard.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Login.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Ticket.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\SearchTicket.cshtml" />
