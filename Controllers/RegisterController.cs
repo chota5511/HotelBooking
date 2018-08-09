@@ -15,19 +15,8 @@ namespace HotelBooking.Controllers
             return View();
         }
 
-
-        [HttpGet]
-        public ActionResult Register(string userid, string username, DateTime? userbirth, string MaleOrFemale, string userpassword, string confirmpassword)
+        public ActionResult Register()
         {
-            HOTELEntities db = new HOTELEntities();
-            user user = new user();
-            user.userid = userid;
-            user.username = username;
-            user.userbirth = userbirth;
-            user.usersex = MaleOrFemale;
-          
-            db.users.Add(user);
-            db.SaveChanges();
             return View();
         }
     } 

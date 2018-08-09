@@ -42,5 +42,10 @@ namespace HotelBooking.Controllers
         {
             return PartialView();
         }
+
+        public ActionResult FooderPadder()
+        {
+            return PartialView();
+        }
     }
 }

@@ -736,6 +736,7 @@
     <Content Include="Views\Home\Destination.cshtml" />
     <Content Include="Views\Register\Register.cshtml" />
     <Content Include="Views\Success\Success.cshtml" />
+    <Content Include="Views\Home\FooderPadder.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

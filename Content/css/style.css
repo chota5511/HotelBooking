@@ -1794,7 +1794,7 @@ html, body {
 }
 /*Login page CSS */
 .login-page-content-area {
-    background-image: url(../img/login-page-bg.jpg);
+    background-image: url(../img/dg_160519_du-lich-da-nang.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1805,8 +1805,8 @@ html, body {
         content: "";
         position: absolute;
         background: #fff;
-        opacity: .9;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
         width: 100%;
         height: 100%;
         left: 0;
