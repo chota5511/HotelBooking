@@ -102,24 +102,46 @@ namespace HotelBooking.Areas.Admin.Controllers
             return View();
         }
 
-        public ActionResult Ticket()
+        //Ticket page: Admin/Admin/Ticket
+
+        //Search for ticket: Admin/Admin/SearchTicket
+        public ActionResult SearchTicket(string info)
         {
-            if(isLogined() == false)
+            if (isLogined() == false || string.IsNullOrEmpty(info) == true)
             {
                 return RedirectToAction("Index", "Admin");
             }
-            return View();
+            List<TicketView> tickets = new List<TicketView>();
+            foreach (ticket t in db.tickets)
+            {
+                TicketView tmp = new TicketView(t);
+                //if any property contains info then add
+                if (string.Format(
+                    tmp.ID.ToString() +
+                    tmp.UserID + 
+                    tmp.UserName + 
+                    tmp.HotelID + 
+                    tmp.HotelName + 
+                    tmp.Date.ToString() +
+                    tmp.DateEnd.ToString() +
+                    tmp.DateStart.ToString()).ToLower().Contains(info.ToLower()))
+                {
+                    tickets.Add(tmp);
+                }
+            }
+            return View(tickets);
         }
-
-        //PartialView here
-        public ActionResult TicketTable()
+        public ActionResult Ticket()
         {
             if (isLogined() == false)
             {
                 return RedirectToAction("Index", "Admin");
             }
             List<TicketView> tickets = TicketView.PullTicket(db.tickets.Count());
-            return PartialView(tickets);
-        } 
+            return View(tickets);
+        }
+
+        //PartialView here
+
     }
 }

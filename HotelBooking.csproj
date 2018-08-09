@@ -696,7 +696,7 @@
     <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Login.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Ticket.cshtml" />
-    <Content Include="Areas\Admin\Views\Admin\TicketTable.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\SearchTicket.cshtml" />
     <EntityDeploy Include="Models\Hotel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Hotel.Designer.cs</LastGenOutput>
