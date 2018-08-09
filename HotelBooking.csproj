@@ -175,6 +175,8 @@
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
     <Compile Include="CommonConstant.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\SuccessController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -732,6 +734,8 @@
     <Content Include="Views\Home\TopDestination.cshtml" />
     <Content Include="Views\Home\SectionSeaToursArea.cshtml" />
     <Content Include="Views\Home\Destination.cshtml" />
+    <Content Include="Views\Register\Register.cshtml" />
+    <Content Include="Views\Success\Success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

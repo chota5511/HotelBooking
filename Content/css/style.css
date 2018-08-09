@@ -1830,7 +1830,6 @@ input:focus {
 
 .nice-select {
     width: 100%;
-    background: transparent;
     border: none;
     border-radius: 0;
     padding: 30px 15px;

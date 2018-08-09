@@ -14,7 +14,7 @@
         <EntityTypeShape EntityType="HOTELModel.hotel" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
         <EntityTypeShape EntityType="HOTELModel.street" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
         <EntityTypeShape EntityType="HOTELModel.ticket" Width="1.5" PointX="7.5" PointY="8.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="HOTELModel.user" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOTELModel.user" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
         <AssociationConnector Association="HOTELModel.administrators_bill_fk" ManuallyRouted="false" />
         <AssociationConnector Association="HOTELModel.ticket_bill_fk" ManuallyRouted="false" />
         <AssociationConnector Association="HOTELModel.city_hotel_fk" ManuallyRouted="false" />
