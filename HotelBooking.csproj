@@ -700,8 +700,8 @@
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Dashboard.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Login.cshtml" />
-    <Content Include="Areas\Admin\Views\Admin\Ticket.cshtml" />
-    <Content Include="Areas\Admin\Views\Admin\SearchTicket.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\Tickets.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\SearchTickets.cshtml" />
     <EntityDeploy Include="Models\Hotel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Hotel.Designer.cs</LastGenOutput>
@@ -709,6 +709,8 @@
     <Content Include="Models\Hotel.edmx.diagram">
       <DependentUpon>Hotel.edmx</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Views\Admin\Users.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\SearchUsers.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

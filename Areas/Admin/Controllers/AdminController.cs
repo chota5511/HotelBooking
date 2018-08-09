@@ -102,36 +102,8 @@ namespace HotelBooking.Areas.Admin.Controllers
             return View();
         }
 
-        //Ticket page: Admin/Admin/Ticket
-
-        //Search for ticket: Admin/Admin/SearchTicket
-        public ActionResult SearchTicket(string info)
-        {
-            if (isLogined() == false || string.IsNullOrEmpty(info) == true)
-            {
-                return RedirectToAction("Dashboard", "Admin");
-            }
-            List<TicketView> tickets = new List<TicketView>();
-            foreach (ticket t in db.tickets)
-            {
-                TicketView tmp = new TicketView(t);
-                //if any property contains info then add
-                if (string.Format(
-                    tmp.ID.ToString() +
-                    tmp.UserID + 
-                    tmp.UserName + 
-                    tmp.HotelID + 
-                    tmp.HotelName + 
-                    tmp.Date.ToString() +
-                    tmp.DateEnd.ToString() +
-                    tmp.DateStart.ToString()).ToLower().Contains(info.ToLower()))
-                {
-                    tickets.Add(tmp);
-                }
-            }
-            return View(tickets);
-        }
-        public ActionResult Ticket()
+        //Ticket page: Admin/Admin/Tickets
+        public ActionResult Tickets()
         {
             if (isLogined() == false)
             {
@@ -140,6 +112,87 @@ namespace HotelBooking.Areas.Admin.Controllers
             List<TicketView> tickets = TicketView.PullTicket(db.tickets.Count());
             return View(tickets);
         }
+
+        //Search for ticket: Admin/Admin/SearchTickets
+        public ActionResult SearchTickets(string info)
+        {
+            if (isLogined() == false || string.IsNullOrEmpty(info) == true)
+            {
+                return RedirectToAction("Dashboard", "Admin");
+            }
+            List<TicketView> tickets = new List<TicketView>();
+            List<string> keyword = new List<string>();
+            keyword = info.Split(' ').ToList();
+            foreach (ticket t in db.tickets)
+            {
+                TicketView tmp = new TicketView(t);
+                bool check = false;
+                //if any property contains info then add
+                foreach (string s in keyword)
+                {
+                    if (string.Format(
+                    tmp.ID.ToString() +
+                    tmp.UserID +
+                    tmp.UserName +
+                    tmp.HotelID +
+                    tmp.HotelName +
+                    tmp.Date.ToString() +
+                    tmp.DateEnd.ToString() +
+                    tmp.DateStart.ToString()).ToLower().Contains(s.ToLower()))
+                    {
+                        check = true;
+                    }
+                }
+                if(check == true)
+                {
+                    tickets.Add(tmp);
+                }
+            }
+            return View(tickets);
+        }
+
+        //User page: Admin/Admin/Users
+        public ActionResult Users()
+        {
+            if(isLogined() == false)
+            {
+                return RedirectToAction("Dashboard", "Admin");
+            }
+            return View(db.users);
+        }
+
+        public ActionResult SearchUsers(string info)
+        {
+            if (isLogined() == false || string.IsNullOrEmpty(info) == true)
+            {
+                return RedirectToAction("Dashboard", "Admin");
+            }
+            List<user> users = new List<user>();
+            List<string> keyword = new List<string>();
+            keyword = info.Split(' ').ToList();
+            foreach (user u in db.users)
+            {
+                bool check = false;
+                //if any property contains info then add
+                foreach (string s in keyword)
+                {
+                    if (string.Format(
+                    u.userid +
+                    u.username +
+                    u.usersex +
+                    u.userbirth.ToString()).ToLower().Contains(s.ToLower()))
+                    {
+                        check = true;
+                    }
+                }
+                if (check == true)
+                {
+                    users.Add(u);
+                }
+            }
+            return View(users);
+        }
+
 
         //PartialView here
 

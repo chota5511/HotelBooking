@@ -79,7 +79,6 @@ D:\Works Place\ASP.NET\HotelBooking\HotelBooking\bin\Microsoft.AI.DependencyColl
 D:\Works Place\ASP.NET\HotelBooking\HotelBooking\bin\Microsoft.AI.WindowsServer.xml
 D:\Works Place\ASP.NET\HotelBooking\HotelBooking\bin\Microsoft.AI.Web.xml
 D:\Works Place\ASP.NET\HotelBooking\HotelBooking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Works Place\ASP.NET\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csprojAssemblyReference.cache
 D:\Works Place\ASP.NET\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.CoreCompileInputs.cache
 D:\Works Place\ASP.NET\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.CopyComplete
 D:\Works Place\ASP.NET\HotelBooking\HotelBooking\obj\Debug\HotelBooking.dll
