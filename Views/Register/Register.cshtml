@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+
+
+    <div id="popup-search-box-id" class="popup-search-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="popup-search-box-inner">
+                        <form action="mail.php">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <input type="search" placeholder="Search here...">
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="submit"><i class="zmdi zmdi-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                        <span class="close-btn-search"><i class="zmdi zmdi-close"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-welcome-area">
+        <div class="page-title-area black-overlay text-center" style="background-image: url(../Content/img/page-title-bg.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-title-inner">
+                            <div class="page-title-inner-table-cell">
+                                <h1>Register</h1>
+                                <div class="page-title-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="#">Register</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-page-content-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="login-page-logo text-center">
+                        <img src="~/Content/img/footer-logo.png" alt="">
+                        <p>Please login to your account</p>
+                    </div>
+                    <div class="login-form-div">
+                        <form action="@Url.Action("Register","Register")" method="post">
+                            <input type="text" name="userid" placeholder="User Name ID">
+                            <input type="text" name="username" placeholder="User Name">
+                            <input type="date" name="userbirth" placeholder="Date of birth">
+                            <select name="MaleOrFemale">
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                            <input type="password" name="userpassword" placeholder="Password">
+                            <input type="password" name="confirmpassword" placeholder="Confirm Password">
+                            <input type="checkbox" name="checkbox" id="login-checkbox" value="value">
+                            <label for="login-checkbox">I agree to the terms of use and privacy.</label>
+                            <button type="submit">Register Now</button>
+                            <a href="#" class="login-via-btn login-via-facebook"><i class="zmdi zmdi-facebook"></i> <span>Login via faceboo</span>k</a>
+                            <a href="#" class="login-via-btn login-via-google-plus"><i class="zmdi zmdi-google-plus"></i> <span>Login via google</span></a>
+                            <a href="#" class="login-via-btn login-via-twitter"><i class="zmdi zmdi-twitter"></i> <span>Login via twitter</span></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
