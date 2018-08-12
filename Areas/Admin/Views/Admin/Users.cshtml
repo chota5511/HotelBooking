@@ -125,7 +125,7 @@
                                     <label for="re-enter-password" class=" form-control-label">Re-enter password</label>
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <input type="password" id="rpassword" name="rpassword" placeholder="If change password re-enter password" class="form-control">
+                                    <input type="password" id="rpassword" name="rpassword" placeholder="If changed re-enter password" class="form-control">
                                 </div>
                             </div>
                             <div class="row form-group">
@@ -168,7 +168,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+            <form action="@Url.Action("AddUser","Admin")" method="post" enctype="multipart/form-data" class="form-horizontal">
                 <div class="modal-body">
                     <!--Content-->
                     <div class="card-body card-block">
@@ -177,7 +177,7 @@
                                 <label class=" form-control-label">User ID:</label>
                             </div>
                             <div class="col-12 col-md-9">
-                                <input type="text" id="text-input" name="text-input" placeholder="Type user ID" class="form-control">
+                                <input type="text" required id="ID" name="ID" placeholder="Type user ID" class="form-control">
                             </div>
                         </div>
                         <div class="row form-group">
@@ -185,7 +185,7 @@
                                 <label for="text-input" class=" form-control-label">User name</label>
                             </div>
                             <div class="col-12 col-md-9">
-                                <input type="text" id="text-input" name="text-input" placeholder="Type user name" class="form-control">
+                                <input type="text" required id="name" name="name" placeholder="Type user name" class="form-control">
                             </div>
                         </div>
                         <div class="row form-group">
@@ -193,7 +193,7 @@
                                 <label for="password" class=" form-control-label">Password</label>
                             </div>
                             <div class="col-12 col-md-9">
-                                <input type="password" id="password" name="password" placeholder="Type password" class="form-control">
+                                <input type="password" required id="password" name="password" placeholder="Type password" class="form-control">
                             </div>
                         </div>
                         <div class="row form-group">
@@ -201,7 +201,7 @@
                                 <label for="re-enter-password" class=" form-control-label">Re-enter password</label>
                             </div>
                             <div class="col-12 col-md-9">
-                                <input type="password" id="rpassword" name="rpassword" placeholder="If change password re-enter password" class="form-control">
+                                <input type="password" id="rpassword" required name="rpassword" placeholder="Re-enter your password" class="form-control">
                             </div>
                         </div>
                         <div class="row form-group">
@@ -209,7 +209,7 @@
                                 <label for="birth" class=" form-control-label">Date of Birth</label>
                             </div>
                             <div class="col-12 col-md-9">
-                                <input type="date" id="birth" name="birth" placeholder="Enter your birth" class="form-control">
+                                <input type="date" id="birth" required name="birth" placeholder="Enter your birth" class="form-control">
                             </div>
                         </div>
                         <div class="row form-group">
@@ -217,7 +217,7 @@
                                 <label for="sex" class=" form-control-label">Sex</label>
                             </div>
                             <div class="col-12 col-md-9">
-                                <select name="sex" id="sex" class="form-control">
+                                <select name="sex" required id="sex" class="form-control">
                                     <option disabled selected value="">Please select</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>

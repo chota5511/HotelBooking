@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="HOTELModel.Store" Provider="Npgsql" ProviderManifestToken="10.4" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="HOTELModel.Store" Provider="Npgsql" ProviderManifestToken="10.4" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="administrators">
           <Key>
             <PropertyRef Name="administratorid" />
@@ -118,7 +118,7 @@
           <Property Name="userid" Type="bpchar" MaxLength="50" Nullable="false" />
           <Property Name="username" Type="bpchar" MaxLength="50" />
           <Property Name="userbirth" Type="date" />
-          <Property Name="usersex" Type="bpchar" MaxLength="3" />
+          <Property Name="usersex" Type="bpchar" MaxLength="7" />
           <Property Name="userpassword" Type="text" Nullable="false" />
         </EntityType>
         <Association Name="administrators_administrators_authorizations_fk">
@@ -360,8 +360,7 @@
             <End Role="ticket" EntitySet="ticket" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="HOTELModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -475,7 +474,7 @@
           <Property Name="userid" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="username" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="userbirth" Type="DateTime" Precision="0" />
-          <Property Name="usersex" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="usersex" Type="String" MaxLength="7" FixedLength="true" Unicode="true" />
           <Property Name="userpassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="tickets" Relationship="Self.user_ticket_fk" FromRole="users" ToRole="ticket" />
         </EntityType>

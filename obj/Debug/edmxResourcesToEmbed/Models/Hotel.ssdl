@@ -113,7 +113,7 @@
     <Property Name="userid" Type="bpchar" MaxLength="50" Nullable="false" />
     <Property Name="username" Type="bpchar" MaxLength="50" />
     <Property Name="userbirth" Type="date" />
-    <Property Name="usersex" Type="bpchar" MaxLength="3" />
+    <Property Name="usersex" Type="bpchar" MaxLength="7" />
     <Property Name="userpassword" Type="text" Nullable="false" />
   </EntityType>
   <Association Name="administrators_administrators_authorizations_fk">

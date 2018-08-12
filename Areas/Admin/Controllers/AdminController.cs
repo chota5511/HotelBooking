@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -196,6 +197,34 @@ namespace HotelBooking.Areas.Admin.Controllers
 
 
         //PartialView here
+
+
+        //Submit Event
+        public ActionResult AddUser(string ID,string name,string password,string rpassword,DateTime? birth,string sex)
+        {
+            if(ID == "" || name == "" || password == "" || rpassword == "" || birth.HasValue == false || sex == "")
+            {
+                Session[CommonConstant.MESSAGE] = "Enter all the infomation";
+            }
+            else if(password != rpassword)
+            {
+                Session[CommonConstant.MESSAGE] = "Password is not match";
+            }
+            else
+            {
+                user tmp = new user();
+                tmp.userid = ID;
+                tmp.username = name;
+                tmp.userpassword = password;
+                tmp.userbirth = birth;
+                tmp.usersex = sex;
+                db.users.Add(tmp);
+                db.SaveChanges();
+                return RedirectToAction("Users", "Admin");
+            }
+            
+            return RedirectToAction("Users", "Admin");
+        }
 
     }
 }
