@@ -22,7 +22,7 @@
                             </ul>
                         </div>
                         <button class="au-btn au-btn-icon au-btn--green" data-target="#AddUser" data-toggle="modal">
-                            <i class="zmdi zmdi-plus"></i>add item
+                            <i class="zmdi zmdi-plus"></i>add user
                         </button>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                <form action="@Url.Action("EditUser","Admin")/@u.userid" method="post" enctype="multipart/form-data" class="form-horizontal">
                     <div class="modal-body">
                         <!--Content-->
                         <div class="card-body card-block">
@@ -109,7 +109,7 @@
                                     <label for="text-input" class=" form-control-label">User name</label>
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control" value="@u.username">
+                                    <input type="text" id="name" name="name" placeholder="Text" class="form-control" value="@u.username">
                                 </div>
                             </div>
                             <div class="row form-group">
@@ -234,4 +234,3 @@
         </div>
     </div>
 </div>
-

@@ -225,6 +225,74 @@ namespace HotelBooking.Areas.Admin.Controllers
             
             return RedirectToAction("Users", "Admin");
         }
+        //Edit user
+        public ActionResult EditUser(string ID, string name, string password, string rpassword, DateTime? birth, string sex)
+        {
+            if (ID == "" || name == "" || password == "" || birth.HasValue == false || sex == "")
+            {
+                Session[CommonConstant.MESSAGE] = "Enter all the infomation";
+            }
+            else if(rpassword == "")
+            {
+                user tmp = new user();
+                tmp.userid = ID;
+                tmp.username = name;
+                tmp.userpassword = password;
+                tmp.userbirth = birth;
+                tmp.usersex = sex;
+                db.Entry(tmp).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Users", "Admin");
+            }
+            else if (password != rpassword)
+            {
+                Session[CommonConstant.MESSAGE] = "Password is not match";
+            }
+            else
+            {
+                user tmp = new user();
+                tmp.userid = ID;
+                tmp.username = name;
+                tmp.userpassword = password;
+                tmp.userbirth = birth;
+                tmp.usersex = sex;
+                db.Entry(tmp).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Users", "Admin");
+            }
+
+            return RedirectToAction("Users", "Admin");
+        }
+        public ActionResult EditTicket(int? ID, DateTime? date, DateTime? datestart,DateTime? dateend)
+        {
+            if (ID != null)
+            {
+                if (date.HasValue == true || datestart.HasValue == true || dateend.HasValue == true)
+                {
+                    ticket tmp = new ticket();
+                    tmp = db.tickets.Find(ID);
+                    if (date.HasValue == true)
+                    {
+                        tmp.ticketdate = (DateTime)date;
+
+                    }
+                    if (datestart.HasValue == true)
+                    {
+                        tmp.datestart = (DateTime)datestart;
+
+                    }
+                    if (dateend.HasValue == true)
+                    {
+                        tmp.expectdateend = dateend;
+                    }
+                    db.Entry(tmp).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
+                return RedirectToAction("Tickets", "Admin");
+            }
+            return RedirectToAction("Tickets", "Admin");
+        }
+
 
     }
 }
