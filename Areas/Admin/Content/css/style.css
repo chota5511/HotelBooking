@@ -1866,17 +1866,6 @@ input:focus {
     color: #D82460;
 }
 
-button[type=submit], .login-via-btn {
-    background: #D82460;
-    color: #fff;
-    border: none;
-    padding: 20px;
-    margin-top: 20px;
-    display: block;
-    width: 100%;
-    font-weight: 700;
-}
-
 .login-via-facebook {
     background: #3C5997;
 }
