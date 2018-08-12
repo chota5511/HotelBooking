@@ -167,7 +167,7 @@ namespace HotelBooking.Areas.Admin.Controllers
         {
             if (isLogined() == false || string.IsNullOrEmpty(info) == true)
             {
-                return RedirectToAction("Dashboard", "Admin");
+                return RedirectToAction("Users", "Admin");
             }
             List<user> users = new List<user>();
             List<string> keyword = new List<string>();
@@ -200,6 +200,7 @@ namespace HotelBooking.Areas.Admin.Controllers
 
 
         //Submit Event
+        //Add a user
         public ActionResult AddUser(string ID,string name,string password,string rpassword,DateTime? birth,string sex)
         {
             if(ID == "" || name == "" || password == "" || rpassword == "" || birth.HasValue == false || sex == "")
@@ -225,44 +226,41 @@ namespace HotelBooking.Areas.Admin.Controllers
             
             return RedirectToAction("Users", "Admin");
         }
-        //Edit user
+
+        //Edit a user
         public ActionResult EditUser(string ID, string name, string password, string rpassword, DateTime? birth, string sex)
         {
-            if (ID == "" || name == "" || password == "" || birth.HasValue == false || sex == "")
+            if (ID != "" || password != "")
             {
-                Session[CommonConstant.MESSAGE] = "Enter all the infomation";
-            }
-            else if(rpassword == "")
-            {
-                user tmp = new user();
-                tmp.userid = ID;
-                tmp.username = name;
-                tmp.userpassword = password;
-                tmp.userbirth = birth;
-                tmp.usersex = sex;
-                db.Entry(tmp).State = EntityState.Modified;
-                db.SaveChanges();
+                if (name != "" || rpassword != "" || birth.HasValue == true || sex != "")
+                {
+                    user tmp = new user();
+                    tmp = db.users.Find(ID);
+                    if(name != "")
+                    {
+                        tmp.username = name;
+                    }
+                    if(rpassword != "" && password == rpassword)
+                    {
+                        tmp.userpassword = password;
+                    }
+                    if (birth.HasValue == true)
+                    {
+                        tmp.userbirth = birth;
+                    }
+                    if(sex != "")
+                    {
+                        tmp.usersex = sex;
+                    }
+                    db.Entry(tmp).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
                 return RedirectToAction("Users", "Admin");
             }
-            else if (password != rpassword)
-            {
-                Session[CommonConstant.MESSAGE] = "Password is not match";
-            }
-            else
-            {
-                user tmp = new user();
-                tmp.userid = ID;
-                tmp.username = name;
-                tmp.userpassword = password;
-                tmp.userbirth = birth;
-                tmp.usersex = sex;
-                db.Entry(tmp).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Users", "Admin");
-            }
-
             return RedirectToAction("Users", "Admin");
         }
+
+        //Edit a ticket
         public ActionResult EditTicket(int? ID, DateTime? date, DateTime? datestart,DateTime? dateend)
         {
             if (ID != null)
@@ -292,7 +290,5 @@ namespace HotelBooking.Areas.Admin.Controllers
             }
             return RedirectToAction("Tickets", "Admin");
         }
-
-
     }
 }

@@ -168,3 +168,4 @@ D:\Work Place\ASP.NET\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.Co
 D:\Work Place\ASP.NET\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.CopyComplete
 D:\Work Place\ASP.NET\HotelBooking\HotelBooking\obj\Debug\HotelBooking.dll
 D:\Work Place\ASP.NET\HotelBooking\HotelBooking\obj\Debug\HotelBooking.pdb
+D:\Works Place\ASP.NET\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csprojAssemblyReference.cache
