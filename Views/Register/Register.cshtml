@@ -35,8 +35,8 @@
                                 <h1>Register</h1>
                                 <div class="page-title-menu">
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="#">Register</a></li>
+                                        <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                                        <li><a href="@Url.Action("Register","Register")">Register</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -56,22 +56,20 @@
                         <p>Please login to your account</p>
                     </div>
                     <div class="login-form-div">
-                        <form action="@Url.Action("Register","Register")" method="post">
-                            <input type="text" name="userid" placeholder="User Name ID">
-                            <input type="text" name="username" placeholder="User Name">
-                            <input type="date" name="userbirth" placeholder="Date of birth">
-                            <select name="MaleOrFemale">
-                                <option value="1">Male</option>
-                                <option value="2">Female</option>
+                        <form action="@Url.Action("Update","Register")" method="post">
+                            <input type="text" name="id" placeholder="User Name ID">
+                            <input type="text" name="name" placeholder="User Name">
+                            <input type="date" name="birth" placeholder="Date of birth">
+                            <select name="sex">
+                                <option selected value="" disabled hidden>Choose sex...</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
                             </select>
-                            <input type="password" name="userpassword" placeholder="Password">
-                            <input type="password" name="confirmpassword" placeholder="Confirm Password">
+                            <input type="password" name="password" placeholder="Password">
+                            <input type="password" name="rpassword" placeholder="Re-enter Password">
                             <input type="checkbox" name="checkbox" id="login-checkbox" value="value">
                             <label for="login-checkbox">I agree to the terms of use and privacy.</label>
                             <button type="submit">Register Now</button>
-                            <a href="#" class="login-via-btn login-via-facebook"><i class="zmdi zmdi-facebook"></i> <span>Login via faceboo</span>k</a>
-                            <a href="#" class="login-via-btn login-via-google-plus"><i class="zmdi zmdi-google-plus"></i> <span>Login via google</span></a>
-                            <a href="#" class="login-via-btn login-via-twitter"><i class="zmdi zmdi-twitter"></i> <span>Login via twitter</span></a>
                         </form>
                     </div>
                 </div>
