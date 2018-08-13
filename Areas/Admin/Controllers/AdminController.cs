@@ -290,5 +290,19 @@ namespace HotelBooking.Areas.Admin.Controllers
             }
             return RedirectToAction("Tickets", "Admin");
         }
+
+        //Delete a user
+        public ActionResult DelUser(int ID)
+        {
+            db.users.Remove(db.users.Find(ID));
+            return RedirectToAction("User", "Admin");
+        }
+
+        //Delete a Ticket
+        public ActionResult DelTicket(int ID)
+        {
+            db.tickets.Remove(db.tickets.Find(ID));
+            return RedirectToAction("Tickets", "Admin");
+        }
     }
 }
