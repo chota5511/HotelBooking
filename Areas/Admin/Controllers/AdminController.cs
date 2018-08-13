@@ -292,16 +292,36 @@ namespace HotelBooking.Areas.Admin.Controllers
         }
 
         //Delete a user
-        public ActionResult DelUser(int ID)
+        public ActionResult DelUser(string ID)
         {
-            db.users.Remove(db.users.Find(ID));
-            return RedirectToAction("User", "Admin");
+            if(ID != "")
+            {
+                user tmp = new user();
+                foreach (user u in db.users)
+                {
+                    if (u.userid.Replace(" ", "") == ID)
+                    {
+                        tmp = u;
+                        break;
+                    }
+                }
+                if (tmp.userid.ToString().Replace(" ", "") != "")
+                {
+                    db.users.Remove(tmp);
+                    db.SaveChanges();
+                }
+            }
+            return RedirectToAction("Users", "Admin");
         }
 
         //Delete a Ticket
-        public ActionResult DelTicket(int ID)
+        public ActionResult DelTicket(int? ID)
         {
-            db.tickets.Remove(db.tickets.Find(ID));
+            if(ID != null)
+            {
+                db.tickets.Remove(db.tickets.Find(ID));
+                db.SaveChanges();
+            }
             return RedirectToAction("Tickets", "Admin");
         }
     }
