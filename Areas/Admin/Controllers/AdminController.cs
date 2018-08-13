@@ -37,7 +37,7 @@ namespace HotelBooking.Areas.Admin.Controllers
             //Check user's id and password
             foreach(administrator a in db.administrators)
             {
-                if(a.administratorpassword.Replace(" ","") == id)
+                if(a.administratorid.Replace(" ","") == id)
                 {
                     if(a.administratorpassword.Replace(" ","") == password)
                     {
