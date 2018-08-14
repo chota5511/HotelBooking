@@ -195,9 +195,60 @@ namespace HotelBooking.Areas.Admin.Controllers
             return View(users);
         }
 
+        //Search for Administrator: Admin/Admin/SearchAdministrators
+        public ActionResult SearchAdministrators(string info)
+        {
+            if (isLogined() == false || string.IsNullOrEmpty(info) == true)
+            {
+                return RedirectToAction("Administrators", "Admin");
+            }
+            List<AdministratorView> administrators = new List<AdministratorView>();
+            List<string> keyword = new List<string>();
+            keyword = info.Split(' ').ToList();
+            foreach (administrator a in db.administrators)
+            {
+                bool check = false;
+                AdministratorView _a = new AdministratorView(a);
+                //if any property contains info then add
+                foreach (string s in keyword)
+                {
+                    if (string.Format(
+                    _a.ID +
+                    _a.Name +
+                    _a.Sex +
+                    _a.AuthorizationName +
+                    a.administratorbirth.ToString()).ToLower().Contains(s.ToLower()))
+                    {
+                        check = true;
+                    }
+                }
+                if (check == true)
+                {
+                    administrators.Add(_a);
+                }
+            }
+            return View(administrators);
+        }
+
+        public ActionResult Administrators()
+        {
+            if(isLogined() == true)
+            {
+                return View(AdministratorView.PullAdministrator(db.administrators.Count()));
+            }
+            return RedirectToAction("Dashboard","Admin");
+        }
+
 
         //PartialView here
-
+        public ActionResult PullAuthorizations()
+        {
+            if (isLogined() == true)
+            {
+                return PartialView(db.authorizations);
+            }
+            return RedirectToAction("Dashboard", "Admin");
+        }
 
         //Submit Event
         //Add a user
@@ -225,6 +276,34 @@ namespace HotelBooking.Areas.Admin.Controllers
             }
             
             return RedirectToAction("Users", "Admin");
+        }
+
+        //Add a Administrator
+        public ActionResult AddAdministrator(string ID, string name, string password, string rpassword, DateTime? birth, string sex, int? authorization)
+        {
+            if (ID == "" || name == "" || password == "" || rpassword == "" || birth.HasValue == false || sex == "" || authorization == null)
+            {
+                Session[CommonConstant.MESSAGE] = "Enter all the infomation";
+            }
+            else if (password != rpassword)
+            {
+                Session[CommonConstant.MESSAGE] = "Password is not match";
+            }
+            else
+            {
+                administrator tmp = new administrator();
+                tmp.administratorid = ID;
+                tmp.administratorname = name;
+                tmp.administratorpassword = password;
+                tmp.administratorbirth = birth;
+                tmp.administratorsex = sex;
+                tmp.authorizationid = (int)authorization;
+                db.administrators.Add(tmp);
+                db.SaveChanges();
+                return RedirectToAction("Administrators", "Admin");
+            }
+
+            return RedirectToAction("Administrators", "Admin");
         }
 
         //Edit a user
@@ -291,6 +370,42 @@ namespace HotelBooking.Areas.Admin.Controllers
             return RedirectToAction("Tickets", "Admin");
         }
 
+        public ActionResult EditAdministrator(string ID, string name, string password, string rpassword, DateTime? birth, int? authorization, string sex)
+        {
+            if (ID != "" || password != "")
+            {
+                if (name != "" || rpassword != "" || birth.HasValue == true || sex != "")
+                {
+                    administrator tmp = new administrator();
+                    tmp = db.administrators.Find(ID);
+                    if (name != "")
+                    {
+                        tmp.administratorname = name;
+                    }
+                    if (rpassword != "" && password == rpassword)
+                    {
+                        tmp.administratorpassword = password;
+                    }
+                    if (birth.HasValue == true)
+                    {
+                        tmp.administratorbirth = birth;
+                    }
+                    if (sex != "")
+                    {
+                        tmp.administratorsex = sex;
+                    }
+                    if(authorization != null)
+                    {
+                        tmp.authorizationid = (int)authorization;
+                    }
+                    db.Entry(tmp).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
+                return RedirectToAction("Administrators", "Admin");
+            }
+            return RedirectToAction("Administrators", "Admin");
+        }
+
         //Delete a user
         public ActionResult DelUser(string ID)
         {
@@ -323,6 +438,28 @@ namespace HotelBooking.Areas.Admin.Controllers
                 db.SaveChanges();
             }
             return RedirectToAction("Tickets", "Admin");
+        }
+        //Del a admin account
+        public ActionResult DelAdministrator(string ID)
+        {
+            if (ID != "")
+            {
+                administrator tmp = new administrator();
+                foreach (administrator a in db.administrators)
+                {
+                    if (a.administratorid.Replace(" ", "") == ID)
+                    {
+                        tmp = a;
+                        break;
+                    }
+                }
+                if (tmp.administratorid.ToString().Replace(" ", "") != "")
+                {
+                    db.administrators.Remove(tmp);
+                    db.SaveChanges();
+                }
+            }
+            return RedirectToAction("Administrators", "Admin");
         }
     }
 }

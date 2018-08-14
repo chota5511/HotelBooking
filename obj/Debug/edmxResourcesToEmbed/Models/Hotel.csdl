@@ -7,7 +7,7 @@
     <Property Name="administratorid" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="administratorname" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
     <Property Name="administratorbirth" Type="DateTime" Precision="0" />
-    <Property Name="administratorsex" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+    <Property Name="administratorsex" Type="String" MaxLength="7" FixedLength="true" Unicode="true" />
     <Property Name="authorizationid" Type="Int32" Nullable="false" />
     <Property Name="administratorpassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="bills" Relationship="Self.administrators_bill_fk" FromRole="administrators" ToRole="bill" />
