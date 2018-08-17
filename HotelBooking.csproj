@@ -175,6 +175,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
     <Compile Include="CommonConstant.cs" />
+    <Compile Include="Controllers\BookingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
@@ -395,12 +396,14 @@
     <Content Include="Content\img\car-5.jpg" />
     <Content Include="Content\img\car-6.jpg" />
     <Content Include="Content\img\car-overlay.png" />
+    <Content Include="Content\img\cards_all.svg" />
     <Content Include="Content\img\carousel-overlay.png" />
     <Content Include="Content\img\cart-icon-img.png" />
     <Content Include="Content\img\cart-icon-img2.png" />
     <Content Include="Content\img\cart-img-1.jpg" />
     <Content Include="Content\img\client-details-div-bg.png" />
     <Content Include="Content\img\counter-up-img1.png" />
+    <Content Include="Content\img\counter-up-img2.png" />
     <Content Include="Content\img\counter-up-img3.png" />
     <Content Include="Content\img\counter-up-img4.png" />
     <Content Include="Content\img\Dalat.jpg" />
@@ -530,6 +533,7 @@
     <Content Include="Content\img\slider-bottom-hp1-gallery2.jpg" />
     <Content Include="Content\img\slider-bottom-hp1-gallery3.jpg" />
     <Content Include="Content\img\subscribe-area-bg.jpg" />
+    <Content Include="Content\img\tangthuong.jpg" />
     <Content Include="Content\img\team-person-1.png" />
     <Content Include="Content\img\team-person-2.png" />
     <Content Include="Content\img\team-person-3.png" />
@@ -714,6 +718,8 @@
     <Content Include="Areas\Admin\Views\Admin\Administrators.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\PullAuthorizations.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\SearchAdministrators.cshtml" />
+    <Content Include="Content\img\Untitled-1" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -744,6 +750,7 @@
     <Content Include="Views\Home\Destination.cshtml" />
     <Content Include="Views\Register\Register.cshtml" />
     <Content Include="Views\Home\FooderPadder.cshtml" />
+    <Content Include="Views\Booking\Booking.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

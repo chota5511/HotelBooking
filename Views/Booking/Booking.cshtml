@@ -1,0 +1,182 @@
+﻿
+@{
+    ViewBag.Title = "Booking";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<div class="page-title-area black-overlay text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-inner">
+                    <div class="page-title-inner-table-cell">
+                        <h1>Hotel Booking</h1>
+                        <div class="page-title-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">Hotel Booking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="booking-page-content-area car-booking-page-area hotel-booking-page-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="booking-page-left-form">
+                <div class="booking-form-heading padding-bottom">
+                    <h3>Your Personal Information</h3>
+                </div>
+                <form action="https://formspree.io/rabukushtia@gmail.com" method="POST">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" name="first-name" placeholder="First name">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="last-name" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="col-sm-6">
+                            <select name="departure-date-select" id="departure-date-select">
+                                <option value="01">Departure Date</option>
+                                <option value="02">Departure Date 1</option>
+                                <option value="03">Departure Date 2</option>
+                                <option value="04">Departure Date 3</option>
+                                <option value="05">Departure Date 4</option>
+                                <option value="05">Departure Date 5</option>
+                                <option value="06">Departure Date 6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 select-height-class">
+                            <select name="country-code-select" id="country-code-select">
+                                <option value="01">Country Code (+97)</option>
+                                <option value="02">Country Code (+98)</option>
+                                <option value="03">Country Code (+99)</option>
+                                <option value="04">Country Code (+00)</option>
+                                <option value="05">Country Code (+01)</option>
+                                <option value="05">Country Code (+02)</option>
+                                <option value="06">Country Code (+03)</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="phone" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="booking-left-checkbox-label">
+                        <input type="checkbox" name="booking-left-checkbox" id="booking-left-checkbox">
+                        <label for="booking-left-checkbox">I want to receive Travel promotional offers in the future</label>
+                    </div>
+                </form>
+                <div class="booking-form-heading section-padding">
+                    <div id="block_content_creditcard">
+                        <div class="flexlayoutform flexlayout100p">
+                            <h3 style="margin:0px;">
+                                My Credit Cards
+                            </h3>
+                        </div>
+                        <hr class="hr10" />
+                        <input type="hidden" name="card_position" id="card_position_0" value="1">
+                        <input type="radio" name="id" value="djJ8VzVzam8wczFRek9pTlZVM0RpWWxuSXZOcTl1MmN3RHZ8nbdhy7-M-5ZyK-fjQhvPnSrc6CZ_yQ" id="cce_0" checked="checked" class="billing_ccradio  visa_radio" onchange="updateFundedCCForms();" />
+                        <label for="cce_0" data-expired="false">
+                            <div class="btn1">
+                                <span class="ccicon f30 ccicon_visa" style="margin-right:10px;vertical-align:text-top;"></span>
+                                <span style="position:relative;top:2px;">Cash On Delivery</span>
+                            </div>
+                            <div class="billing_cc_expiration">
+                                &nbsp;
+                            </div>
+                            <button class="zmdi zmdi-chevron-up move-cc-up" id="cc-order-0" data-popup2="TW92ZSBVcA==" style="opacity:0;"></button>
+                            <i id="billing-spinner"></i>
+                            <form method="post" action="/billing/">
+                                <input type="hidden" name="csrf_token" value="UZuiIgN/NY9PF4CIgpcQ6nqP8TdexWwth+XpyupF/v4=">
+                                <input type="hidden" name="action" value="autoPayRemove">
+                                <input type="hidden" name="id" value="djJ8VzVzam8wczFRek9pTlZVM0RpWWxuSXZOcTl1MmN3RHZ8nbdhy7-M-5ZyK-fjQhvPnSrc6CZ_yQ">
+                                <button type="submit" class="fonticondelete" aria-label="Remove Card" data-popup2="UmVtb3ZlIENhcmQ="></button>
+                            </form>
+                        </label>
+                        <input type="radio" name="id" value="newcc" id="cce_new" class="billing_ccradio" onchange="updateFundedCCForms();" />
+                        <label class="btn1" for="cce_new" class="w100p">
+                            <span>Pay By Credit Card</span>
+                        </label>
+                        <hr class="hr20" />
+                        <!--                          div    -->
+                        <form method="post" id="billing_add_cc_payment">
+                            <div class="booking-form-heading section-padding ">
+                                <h3>Your Card Information</h3>
+
+
+                                <div class="row" for="cce_new">
+                                    <div class="col-sm-6 select-height-class ">
+                                        <select name="card-select" id="card-select">
+                                            <option value="01">Select a card</option>
+                                            <option value="02">Card 1</option>
+                                            <option value="03">Card 2</option>
+                                            <option value="04">Card 3</option>
+                                            <option value="05">Card 4</option>
+                                            <option value="05">Card 5</option>
+                                            <option value="06">Card 6</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="card-holder-name" placeholder="Card Holder Name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" name="card-number" placeholder="Card Number">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="card-identification-number" placeholder="Card Identification Number">
+                                    </div>
+                                </div>
+                                <h5>Expiration Date</h5>
+                                <div class="row">
+                                    <div class="col-sm-5 select-height-class">
+                                        <select name="booking-month" id="booking-month">
+                                            <option value="01">Month</option>
+                                            <option value="02">January</option>
+                                            <option value="03">February</option>
+                                            <option value="04">March</option>
+                                            <option value="05">April</option>
+                                            <option value="05">May</option>
+                                            <option value="06">June</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4 select-height-class">
+                                        <select name="booking-year" id="booking-year">
+                                            <option value="01">Year</option>
+                                            <option value="02">1990</option>
+                                            <option value="03">1991</option>
+                                            <option value="04">1992</option>
+                                            <option value="05">1993</option>
+                                            <option value="05">1994</option>
+                                            <option value="06">1995</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" name="billing-zip-code" placeholder="Billing Zip Code">
+                                    </div>
+                                </div>
+                                <div class="booking-left-checkbox-label">
+                                    <input type="checkbox" name="booking-left-checkbox2" id="booking-left-checkbox2">
+                                    <label for="booking-left-checkbox2">By continuing, you agree to the Terms and Conditions.</label>
+                                </div>
+                            </div>
+                        </form>
+                        <button type="submit" class="pink-btn">Confirm Booking</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

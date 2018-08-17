@@ -1,0 +1,163 @@
+﻿
+@{
+    ViewBag.Title = "Tickets";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<!-- BREADCRUMB-->
+<section class="au-breadcrumb m-t-75">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="au-breadcrumb-content">
+                        <div class="au-breadcrumb-left">
+                            <span class="au-breadcrumb-span">You are here:</span>
+                            <ul class="list-unstyled list-inline au-breadcrumb__list">
+                                <li class="list-inline-item active">
+                                    <a href="#">Dashboard</a>
+                                </li>
+                                <li class="list-inline-item seprate">
+                                    <span>/</span>
+                                </li>
+                                <li class="list-inline-item">Ticket</li>
+                            </ul>
+                        </div>
+                        <button class="au-btn au-btn-icon au-btn--green">
+                            <i class="zmdi zmdi-plus"></i>add item
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END BREADCRUMB-->
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="col-lg-12">
+            <div class="car-list-top-form-inner" style="margin-top:0px;border-radius:10px">
+                <form action="@Url.Action("SearchTickets","Admin")" method="post">
+                    <div class="car-list-find" style="width:78%">
+                        <h6>Find the Ticket</h6>
+                        <input type="text" name="info" placeholder="Type ticket info">
+                    </div>
+                    <div class="car-list-submit">
+                        <button type="submit" class="pink-btn" style="background-color:#333">Find ticket</button>
+                    </div>
+                </form>
+            </div>
+            <div style="height:30px"></div>
+            <div class="table-responsive table--no-card m-b-30">
+                <table class="table table-borderless table-striped table-earning">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th class="text-center">Date</th>
+                            <th class="text-center">User ID</th>
+                            <th class="text-center">User Name</th>
+                            <th class="text-center">Date Start</th>
+                            <th class="text-center">Date End (Expect)</th>
+                            <th class="text-right">Hotel Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var t in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <button data-toggle="modal" data-target="@string.Format("#EditTicket" + t.ID.ToString().Replace(" ",""))" type="button" style="color:#555">
+                                        <i class="fa fa-edit"></i>&nbsp;@t.ID
+                                    </button>
+                                </td>
+                                <td class="text-center">@t.Date</td>
+                                <td class="text-center">@t.UserID</td>
+                                <td class="text-center">@t.UserName</td>
+                                <td class="text-center">@t.DateStart</td>
+                                <td class="text-center">@t.DateEnd</td>
+                                <td class="text-right">@t.HotelName</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@foreach (var t in Model)
+{
+    <div class="modal fade" id="@string.Format("EditTicket" + @t.ID.ToString().Replace(" ",""))" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="scrollmodalLabel">Scrolling Long Content Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!--Content-->
+                <form action="@Url.Action("EditTicket","Admin")/@t.ID" method="post" enctype="multipart/form-data" class="form-horizontal">
+                    <div class="modal-body">
+                        <!--Content-->
+                        <div class="card-body card-block">
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label class=" form-control-label">Order ID</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <p class="form-control-static">@t.ID</p>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="text-input" class=" form-control-label">User name</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <p class="form-control-static">@t.UserName</p>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="date" class=" form-control-label">Date</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="date" id="date" name="date" placeholder="Enter date" class="form-control" value="@t.Date">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="datestart" class=" form-control-label">Date Start</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="date" id="datestart" name="datestart" placeholder="Enter date" class="form-control" value="@t.DateStart">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="birth" class=" form-control-label">Date end (expect)</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="date" id="dateend" name="dateend" placeholder="Enter date" class="form-control" value="@t.DateEnd">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label class=" form-control-label">Hotel name</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <p class="form-control-static">@t.HotelName</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Confirm</button>
+                        <button type="button" class="btn btn-secondary" style="background-color:red;border-color:red" onclick="location.href='@Url.Action("DelTicket","Admin")/@t.ID'">Delete</button>
+                    </div>
+                </form>
+                <!--End Content-->
+            </div>
+        </div>
+    </div>
+}

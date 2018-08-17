@@ -1,0 +1,1702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Work Place\ASP.NET\publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/css/font-face.css">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/css/style.css">
+      <publishTime>08/12/2018 18:26:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/css/theme.css">
+      <publishTime>08/09/2018 20:48:01</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-100.eot">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-100.svg">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-100.ttf">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-100.woff">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-100.woff2">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-100italic.eot">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-100italic.svg">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-100italic.ttf">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-100italic.woff">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-100italic.woff2">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-200.eot">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-200.svg">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-200.ttf">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-200.woff">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-200.woff2">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-200italic.eot">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-200italic.svg">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-200italic.ttf">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-200italic.woff">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-200italic.woff2">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-300.eot">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-300.svg">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-300.ttf">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-300.woff">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-300.woff2">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-300italic.eot">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-300italic.svg">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-300italic.ttf">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-300italic.woff">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-300italic.woff2">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-500.eot">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-500.svg">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-500.ttf">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-500.woff">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-500.woff2">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-500italic.eot">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-500italic.svg">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-500italic.ttf">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-500italic.woff">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-500italic.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-600.eot">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-600.svg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-600.ttf">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-600.woff">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-600.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-600italic.eot">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-600italic.svg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-600italic.ttf">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-600italic.woff">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-600italic.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-700.eot">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-700.svg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-700.ttf">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-700.woff">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-700.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-700italic.eot">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-700italic.svg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-700italic.ttf">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-700italic.woff">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-700italic.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-800.eot">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-800.svg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-800.ttf">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-800.woff">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-800.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-800italic.eot">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-800italic.svg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-800italic.ttf">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-800italic.woff">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-800italic.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-900.eot">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-900.svg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-900.ttf">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-900.woff">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-900.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-900italic.eot">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-900italic.svg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-900italic.ttf">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-900italic.woff">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-900italic.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-italic.eot">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-italic.svg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-italic.ttf">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-italic.woff">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-italic.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-regular.eot">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-regular.svg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-regular.ttf">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-regular.woff">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/fonts/poppins/poppins-v5-latin-regular.woff2">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/avatar/admin.png">
+      <publishTime>08/08/2018 19:48:16</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/bg-title-01.jpg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/bg-title-02.jpg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/avatar-01.jpg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/avatar-02.jpg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/avatar-03.jpg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/avatar-04.jpg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/avatar-05.jpg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/avatar-06.jpg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/avatar-big-01.jpg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/logo-blue.png">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/logo-mini.png">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/logo-white.png">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/logo.png">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/images/icon/Untitled-1.jpg">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/js/main.js">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/animsition/animsition.min.css">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/animsition/animsition.min.js">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/bootstrap-4.1/bootstrap.min.css">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/bootstrap-4.1/bootstrap.min.js">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/bootstrap-4.1/popper.min.js">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/chartjs/Chart.bundle.min.js">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/circle-progress/circle-progress.js">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/circle-progress/circle-progress.min.js">
+      <publishTime>08/06/2018 14:49:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/countdown/countdowntime.js">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/countdown/jquery.countdown.min.js">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/countdown/moment-timezone-with-data.min.js">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/countdown/moment-timezone.min.js">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/countdown/moment.min.js">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/counter-up/jquery.counterup.min.js">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/counter-up/jquery.waypoints.min.js">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/counter-up/waypoints.min.js">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/css-hamburgers/hamburgers.css">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/css-hamburgers/hamburgers.min.css">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-4.7/css/font-awesome.css">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-4.7/css/font-awesome.min.css">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-4.7/fonts/fontawesome-webfont.eot">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-4.7/fonts/fontawesome-webfont.ttf">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff2">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-4.7/fonts/FontAwesome.otf">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-4.7/HELP-US-OUT.txt">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/css/fontawesome-all.min.css">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-brands-400.eot">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-brands-400.svg">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-brands-400.ttf">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-brands-400.woff">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-brands-400.woff2">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-regular-400.eot">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-regular-400.svg">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-regular-400.ttf">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-regular-400.woff">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-regular-400.woff2">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-solid-900.eot">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-solid-900.svg">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-solid-900.ttf">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-solid-900.woff">
+      <publishTime>08/06/2018 14:49:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/font-awesome-5/webfonts/fa-solid-900.woff2">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/jquery-3.2.1.min.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/jquery-ui.min.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/css/lightbox.css">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/images/close.png">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/images/loading.gif">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/images/next.png">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/images/prev.png">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/js/lightbox-plus-jquery.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.map">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/js/lightbox.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/js/lightbox.min.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/dist/js/lightbox.min.map">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/src/css/lightbox.css">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/src/images/close.png">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/src/images/loading.gif">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/src/images/next.png">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/src/images/prev.png">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/lightbox2/src/js/lightbox.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/mdi-font/css/material-design-iconic-font.css">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/mdi-font/css/material-design-iconic-font.min.css">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/mdi-font/fonts/Material-Design-Iconic-Font.eot">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/mdi-font/fonts/Material-Design-Iconic-Font.ttf">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff2">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/perfect-scrollbar/perfect-scrollbar.css">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/perfect-scrollbar/perfect-scrollbar.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/perfect-scrollbar/perfect-scrollbar.min.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/progressbar/progressbar.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/progressbar/progressbar.min.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/select2/select2.min.css">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/select2/select2.min.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/ajax-loader.gif">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/config.rb">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/fonts/slick.eot">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/fonts/slick.svg">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/fonts/slick.ttf">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/fonts/slick.woff">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/slick-theme.css">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/slick-theme.less">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/slick-theme.scss">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/slick.css">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/slick.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/slick.less">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/slick.min.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/slick/slick.scss">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/smk-accordion/accordion.css">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/smk-accordion/accordion.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/smk-accordion/accordion.min.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/sweetalert/sweetalert.min.js">
+      <publishTime>08/06/2018 14:49:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jquery.vmap.brazil.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jquery.vmap.europe.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jquery.vmap.france.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jquery.vmap.germany.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jquery.vmap.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jquery.vmap.min.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jquery.vmap.russia.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jquery.vmap.sampledata.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jquery.vmap.usa.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jquery.vmap.world.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/vector-map/jqvmap.min.css">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/wow/animate.css">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Content/vendor/wow/wow.min.js">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/Administrators.cshtml">
+      <publishTime>08/17/2018 15:45:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/Dashboard.cshtml">
+      <publishTime>08/09/2018 20:50:21</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/Login.cshtml">
+      <publishTime>08/12/2018 18:26:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/PullAuthorizations.cshtml">
+      <publishTime>08/17/2018 15:45:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/SearchAdministrators.cshtml">
+      <publishTime>08/17/2018 15:45:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/SearchTickets.cshtml">
+      <publishTime>08/17/2018 15:45:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/SearchUsers.cshtml">
+      <publishTime>08/17/2018 15:45:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/Tickets.cshtml">
+      <publishTime>08/17/2018 15:45:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/Users.cshtml">
+      <publishTime>08/17/2018 15:45:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_AdminLayout.cshtml">
+      <publishTime>08/17/2018 15:45:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/web.config">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>08/06/2018 14:49:47</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 13:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
+    </File>
+    <File Include="bin/EntityFramework6.Npgsql.dll">
+      <publishTime>07/08/2018 15:47:40</publishTime>
+    </File>
+    <File Include="bin/HotelBooking.dll">
+      <publishTime>08/17/2018 17:22:08</publishTime>
+    </File>
+    <File Include="bin/HotelBooking.pdb">
+      <publishTime>08/17/2018 17:22:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>06/27/2017 12:59:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>02/22/2018 16:25:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>02/22/2018 16:36:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>02/22/2018 14:39:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>02/22/2018 16:35:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>02/22/2018 16:36:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>02/22/2018 14:36:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.TelemetryCorrelation.dll">
+      <publishTime>06/28/2017 15:05:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2018 09:44:54</publishTime>
+    </File>
+    <File Include="bin/Npgsql.dll">
+      <publishTime>07/08/2018 15:08:14</publishTime>
+    </File>
+    <File Include="bin/Npgsql.pdb">
+      <publishTime>07/08/2018 15:08:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>07/19/2017 10:01:30</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>05/15/2018 13:29:42</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.Extensions.dll">
+      <publishTime>05/15/2018 13:29:46</publishTime>
+    </File>
+    <File Include="bin/System.ValueTuple.dll">
+      <publishTime>05/15/2018 13:29:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/01/2018 12:16:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/01/2018 12:16:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/01/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Content/css/.DS_Store">
+      <publishTime>08/17/2018 16:14:13</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css">
+      <publishTime>08/17/2018 16:14:13</publishTime>
+    </File>
+    <File Include="Content/css/font-awesome.min.css">
+      <publishTime>08/17/2018 16:14:13</publishTime>
+    </File>
+    <File Include="Content/css/magnific-popup.css">
+      <publishTime>08/17/2018 16:14:13</publishTime>
+    </File>
+    <File Include="Content/css/material-design-iconic-font.min.css">
+      <publishTime>08/17/2018 16:14:13</publishTime>
+    </File>
+    <File Include="Content/css/nice-select.css">
+      <publishTime>08/17/2018 16:14:13</publishTime>
+    </File>
+    <File Include="Content/css/owl.carousel.min.css">
+      <publishTime>08/17/2018 16:14:13</publishTime>
+    </File>
+    <File Include="Content/css/responsive.css">
+      <publishTime>08/17/2018 16:14:13</publishTime>
+    </File>
+    <File Include="Content/css/slicknav.min.css">
+      <publishTime>08/17/2018 16:14:13</publishTime>
+    </File>
+    <File Include="Content/css/style.css">
+      <publishTime>08/17/2018 16:14:13</publishTime>
+    </File>
+    <File Include="Content/fonts/AsiyahScript.eot">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/AsiyahScript.ttf">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/AsiyahScript.woff">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/dead_stock_-_demo-webfont.woff">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/dead_stock_-_demo-webfont.woff2">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.eot">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.svg">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.ttf">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.woff">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.woff2">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/Material-Design-Iconic-Font.eot">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/Material-Design-Iconic-Font.svg">
+      <publishTime>08/17/2018 16:14:14</publishTime>
+    </File>
+    <File Include="Content/fonts/Material-Design-Iconic-Font.ttf">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/fonts/Material-Design-Iconic-Font.woff">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/fonts/Material-Design-Iconic-Font.woff2">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/.DS_Store">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/about-us-top-img1.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/about-us-top-img2.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/best-for-clients-pink-img-1.png">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/best-for-clients-pink-img-2.png">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/best-for-clients-pink-img-3.png">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/best-for-clients-single-img1.png">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/best-for-clients-single-img2.png">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/best-for-clients-single-img3.png">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/best-tour-packages-top-hp3-1.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/best-tour-packages-top-hp3-2.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/best-tour-packages-top-hp3-3.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/bien2.jpeg">
+      <publishTime>08/08/2018 18:27:58</publishTime>
+    </File>
+    <File Include="Content/img/big-car-1.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/big-flight-img.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-medium-img1.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-medium-img2.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-medium-img3.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-medium-img4.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-medium-img5.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-medium-img6.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-medium-img7.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-medium-img8.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-medium-img9.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-right-s2.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-right-s3.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-single-comment-img1.png">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-single-comment-img2.png">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/blog-single-comment-img3.png">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/car-1.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/car-2.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/car-3.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/car-4.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/car-5.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/car-6.jpg">
+      <publishTime>08/17/2018 16:14:15</publishTime>
+    </File>
+    <File Include="Content/img/car-overlay.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/cards_all.svg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/carousel-overlay.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/cart-icon-img.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/cart-icon-img2.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/cart-img-1.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/client-details-div-bg.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/counter-up-img1.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/counter-up-img2.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/counter-up-img3.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/counter-up-img4.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/Dalat.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/destination-honeymoon-bg1.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/destination-honeymoon-bg2.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/destination-honeymoon-bg3.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/destination-honeymoon-bg4.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/destination-honeymoon-bg5.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/destination-honeymoon-bg6.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/dg_160519_du-lich-da-nang.jpg">
+      <publishTime>08/09/2018 20:26:01</publishTime>
+    </File>
+    <File Include="Content/img/error-v2-bg.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flight-details-logo-img.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flight-list-1.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flight-list-2.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flight-list-3.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flight-list-4.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flight-list-5.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flight-list-6.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flug-1.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flug-2.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flug-2.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flug-3.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flug-3.png">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flug-4.jpg">
+      <publishTime>08/17/2018 16:14:16</publishTime>
+    </File>
+    <File Include="Content/img/flug-4.png">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/flug-5.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/flug-5.png">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/footer-logo-hp2.png">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/footer-logo.png">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/ha-long.jpg">
+      <publishTime>08/09/2018 20:17:09</publishTime>
+    </File>
+    <File Include="Content/img/Halongbay.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/Hanoi-by-Night-Hero-1.jpg">
+      <publishTime>08/09/2018 20:19:54</publishTime>
+    </File>
+    <File Include="Content/img/Hcmcity.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/Hoian.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/holiday-packages-item-bg1.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/holiday-packages-item-bg2.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hotel-details-1.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hotel-list-1.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hotel-list-2.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hotel-list-3.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hotel-list-4.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hotel-list-5.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hotel-list-6.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-img1.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-img2.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-img3-1.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-img3.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-img6.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-small1-1.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-small1.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-small2-1.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-small2.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-small3-1.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-slider-small3.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-testi-author1.png">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-testi-author2.png">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp1-testi-author3.png">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp2-absolute-bg.jpg">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp2-carousel-author1.png">
+      <publishTime>08/17/2018 16:14:17</publishTime>
+    </File>
+    <File Include="Content/img/hp2-footer-image-right-1.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp2-footer-image-right-2.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp2-footer-image-right-3.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp2-footer-image-right-4.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp2-footer-image-right-5.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp2-footer-image-right-6.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp2-slider-bg1.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp2-slider-bg2.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp2-slider-bg3.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp3-footer-logo.png">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp3-logo.png">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/hp3-slider-bg.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/Hue.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/img-01.jpg">
+      <publishTime>08/06/2018 14:49:54</publishTime>
+    </File>
+    <File Include="Content/img/img-02.jpg">
+      <publishTime>08/06/2018 14:49:54</publishTime>
+    </File>
+    <File Include="Content/img/img-03.jpg">
+      <publishTime>08/06/2018 14:49:54</publishTime>
+    </File>
+    <File Include="Content/img/login-page-bg.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/logo-hp2.png">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/logo.png">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/Muine.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/need-travel-help-bg.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/Nhatrangbeach.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/page-title-bg.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/photo-1499814375754-a481db8ab6c5.jpg">
+      <publishTime>08/06/2018 14:49:54</publishTime>
+    </File>
+    <File Include="Content/img/Phuquoc.jpeg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/popular-destinations-hp3-image1.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/recent-post-img1.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/recent-post-img2.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/recent-post-img3.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/section-sea-tours-paris-bg .jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/section-sea-tours-paris-bg.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/section-title-bg.png">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/shop-details-1.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/shop-details-small1.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/shop-details-small2.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/shop-details-small3.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/shop-img-1.jpg">
+      <publishTime>08/17/2018 16:14:18</publishTime>
+    </File>
+    <File Include="Content/img/shop-img-2.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/shop-img-3.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/shop-img-4.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/shop-img-5.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/shop-img-6.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/shop-img-7.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/shop-img-8.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/shop-img-9.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-sea-tours-image-bg1.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-sea-tours-image-bg2.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-sea-tours-image-bg3.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-sea-tours-image-bg4.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-sea-tours-image-bg5.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-sea-tours-image-bg6.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-sea-tours-image-bg7.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-sea-tours-image-bg8.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-sea-tours-image-bg9.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg10.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg11.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg12.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg2.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg3.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg4.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg5.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg6.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg7.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg8.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/single-top-destination-item-bg9.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/slider-bottom-hp1-gallery1.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/slider-bottom-hp1-gallery2.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/slider-bottom-hp1-gallery3.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/subscribe-area-bg.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/tangthuong.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/team-person-1.png">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/team-person-2.png">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/team-person-3.png">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/team-person-4.png">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/team-person-5.png">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/team-person-6.png">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/team-person-7.png">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/team-person-8.png">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/top-destination-area-bg.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/topproof1.jpg">
+      <publishTime>08/08/2018 18:48:25</publishTime>
+    </File>
+    <File Include="Content/img/topproof2.jpg">
+      <publishTime>08/08/2018 18:48:24</publishTime>
+    </File>
+    <File Include="Content/img/tours-details-gallery-single1.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/tours-details-gallery-single2.jpg">
+      <publishTime>08/17/2018 16:14:19</publishTime>
+    </File>
+    <File Include="Content/img/tours-details-gallery-single3.jpg">
+      <publishTime>08/17/2018 16:14:20</publishTime>
+    </File>
+    <File Include="Content/img/Untitled-1">
+      <publishTime>08/17/2018 16:14:20</publishTime>
+    </File>
+    <File Include="Content/img/world-out-there-right-bg.jpg">
+      <publishTime>08/17/2018 16:14:20</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap.min.js">
+      <publishTime>08/17/2018 16:14:20</publishTime>
+    </File>
+    <File Include="Content/js/jquery.counterup.min.js">
+      <publishTime>08/17/2018 16:14:20</publishTime>
+    </File>
+    <File Include="Content/js/jquery.min.js">
+      <publishTime>08/17/2018 16:14:20</publishTime>
+    </File>
+    <File Include="Content/js/jquery.nice-select.min.js">
+      <publishTime>08/17/2018 16:14:20</publishTime>
+    </File>
+    <File Include="Content/js/jquery.slicknav.min.js">
+      <publishTime>08/17/2018 16:14:20</publishTime>
+    </File>
+    <File Include="Content/js/jquery.waypoints.4.0.0.min.js">
+      <publishTime>08/17/2018 16:14:20</publishTime>
+    </File>
+    <File Include="Content/js/magnific-popup-1.1.0.js">
+      <publishTime>08/17/2018 16:14:20</publishTime>
+    </File>
+    <File Include="Content/js/main.js">
+      <publishTime>08/17/2018 16:14:21</publishTime>
+    </File>
+    <File Include="Content/js/map.js">
+      <publishTime>08/17/2018 16:14:21</publishTime>
+    </File>
+    <File Include="Content/js/owl.carousel.min.js">
+      <publishTime>08/17/2018 16:14:21</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>08/06/2018 14:49:51</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>08/06/2018 14:50:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>08/06/2018 14:50:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>08/06/2018 14:50:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>08/06/2018 14:50:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>08/06/2018 14:50:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>08/06/2018 14:50:00</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Models/Hotel.edmx.diagram">
+      <publishTime>08/09/2018 19:49:49</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Views/Booking/Booking.cshtml">
+      <publishTime>08/17/2018 16:13:27</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Views/Home/Destination.cshtml">
+      <publishTime>08/09/2018 13:48:09</publishTime>
+    </File>
+    <File Include="Views/Home/FooderPadder.cshtml">
+      <publishTime>08/09/2018 20:06:44</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>08/09/2018 20:07:16</publishTime>
+    </File>
+    <File Include="Views/Home/SectionSeaToursArea.cshtml">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Views/Home/TopDestination.cshtml">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Views/Register/Register.cshtml">
+      <publishTime>08/17/2018 15:45:10</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Views/Shared/_UserLayout.cshtml">
+      <publishTime>08/17/2018 16:21:35</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>08/06/2018 14:49:55</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/17/2018 16:37:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

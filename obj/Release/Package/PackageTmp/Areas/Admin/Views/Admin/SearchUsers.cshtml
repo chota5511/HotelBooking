@@ -1,0 +1,238 @@
+﻿
+@{
+    /**/
+
+    ViewBag.Title = "Users";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<section class="au-breadcrumb m-t-75">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="au-breadcrumb-content">
+                        <div class="au-breadcrumb-left">
+                            <span class="au-breadcrumb-span">You are here:</span>
+                            <ul class="list-unstyled list-inline au-breadcrumb__list">
+                                <li class="list-inline-item active">
+                                    <a href="#">Dashboard</a>
+                                </li>
+                                <li class="list-inline-item seprate">
+                                    <span>/</span>
+                                </li>
+                                <li class="list-inline-item">Users</li>
+                            </ul>
+                        </div>
+                        <button data-toggle="modal" data-target="#AddUser" class="au-btn au-btn-icon au-btn--green">
+                            <i class="zmdi zmdi-plus"></i>add user
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END BREADCRUMB-->
+
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="col-lg-12">
+            <div class="car-list-top-form-inner" style="margin-top:0px;border-radius:10px">
+                <form action="@Url.Action("SearchUsers","Admin")" method="post">
+                    <div class="car-list-find" style="width:78%">
+                        <h6>Find the Ticket</h6>
+                        <input type="text" name="info" placeholder="Type user info">
+                    </div>
+                    <div class="car-list-submit">
+                        <button type="submit" class="pink-btn" style="background-color:#333">Find User</button>
+                    </div>
+                </form>
+            </div>
+            <div style="height:30px"></div>
+            <div class="table-responsive table--no-card m-b-30">
+                <table class="table table-borderless table-striped table-earning">
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th class="text-center">Password</th>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Date of birth</th>
+                            <th class="text-right">Sex</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var u in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <button data-toggle="modal" data-target="@string.Format("#EditUser" + @u.userid.ToString().Replace(" ",""))" type="button" style="color:#555">
+                                        <i class="fa fa-edit"></i>&nbsp;@u.userid
+                                    </button>
+                                </td>
+                                <td class="text-center">@u.userpassword</td>
+                                <td class="text-center">@u.username</td>
+                                <td class="text-center">@u.userbirth</td>
+                                <td class="text-right">@u.usersex</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal-->
+@foreach (var u in Model)
+{
+    <div class="modal fade" id="@string.Format("EditUser" + @u.userid.ToString().Replace(" ",""))" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="scrollmodalLabel">Scrolling Long Content Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="@Url.Action("EditUser","Admin")/@u.userid" method="post" enctype="multipart/form-data" class="form-horizontal">
+                    <div class="modal-body">
+                        <!--Content-->
+                        <div class="card-body card-block">
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label class=" form-control-label">User ID:</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <p class="form-control-static">@u.userid</p>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="text-input" class=" form-control-label">User name</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="text" id="name" name="name" placeholder="Text" class="form-control" value="@u.username">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="password" class=" form-control-label">Password</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="password" id="password" name="password" placeholder="Type password" class="form-control" value="@u.userpassword">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="re-enter-password" class=" form-control-label">Re-enter password</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="password" id="rpassword" name="rpassword" placeholder="If changed re-enter password" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="birth" class=" form-control-label">Date of Birth</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <input type="date" id="birth" name="birth" placeholder="Enter your birth" class="form-control" value="@u.userbirth">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="sex" class=" form-control-label">Sex</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <select name="sex" id="sex" class="form-control">
+                                        <option selected hidden value="@u.usersex">@u.usersex</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Confirm</button>
+                        <button type="button" class="btn btn-secondary" style="background-color:red;border-color:red" onclick="location.href='@Url.Action("DelUser","Admin")/@u.userid.ToString().Replace(" ","")'">Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+<div class="modal fade" id="AddUser" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="scrollmodalLabel">Scrolling Long Content Modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="@Url.Action("AddUser","Admin")" method="post" enctype="multipart/form-data" class="form-horizontal">
+                <div class="modal-body">
+                    <!--Content-->
+                    <div class="card-body card-block">
+                        <div class="row form-group">
+                            <div class="col col-md-3">
+                                <label class=" form-control-label">User ID:</label>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <input type="text" required id="ID" name="ID" placeholder="Type user ID" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col col-md-3">
+                                <label for="text-input" class=" form-control-label">User name</label>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <input type="text" required id="name" name="name" placeholder="Type user name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col col-md-3">
+                                <label for="password" class=" form-control-label">Password</label>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <input type="password" required id="password" name="password" placeholder="Type password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col col-md-3">
+                                <label for="re-enter-password" class=" form-control-label">Re-enter password</label>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <input type="password" id="rpassword" required name="rpassword" placeholder="Re-enter your password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col col-md-3">
+                                <label for="birth" class=" form-control-label">Date of Birth</label>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <input type="date" id="birth" required name="birth" placeholder="Enter your birth" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col col-md-3">
+                                <label for="sex" class=" form-control-label">Sex</label>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <select name="sex" required id="sex" class="form-control">
+                                    <option disabled selected value="">Please select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" style="">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

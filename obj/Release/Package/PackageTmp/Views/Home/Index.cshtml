@@ -1,0 +1,339 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="welcome-area">
+    <div class="slider-area slider-area-hp1 owl-carousel text-center">
+        <div class="single-slide-item hp1-slider-bg1" data-dot="<img src='../Content/img/hp1-slider-small1.jpg' alt=''>">
+            <div class="single-slide-item-table-cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h1>Travel the world</h1>
+                            <p>Writers and stars of Veep have responded incredulously to the news an Australian politician</p>
+                            <a href="tours.html" class="pink-btn">View All Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slide-item hp1-slider-bg2" data-dot="<img src='../Content/img/hp1-slider-small2.jpg' alt=''>">
+            <div class="single-slide-item-table-cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h1>Travel the world</h1>
+                            <p>Writers and stars of Veep have responded incredulously to the news an Australian politician</p>
+                            <a href="tours.html" class="pink-btn">View All Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slide-item hp1-slider-bg3" data-dot="<img src='../Content/img/hp1-slider-small3.jpg' alt=''>">
+            <div class="single-slide-item-table-cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h1>Travel the world</h1>
+                            <p>Writers and stars of Veep have responded incredulously to the news an Australian politician</p>
+                            <a href="tours.html" class="pink-btn">View All Tours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slider-bottom-form-carousel-area-hp1 padding-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="slider-bottom-form-hp1">
+                    <div class="slider-bottom-menu">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Hotels</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Tours</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Car rent</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Flights</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="home">
+                            <div class="s-bottom-form">
+                                <form action="index.html">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="name-input-arrow"><input type="text" id="hotel-name-input" name="hotel-name" placeholder="Hotel name here"></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="city-select" id="city-select">
+                                                <option value="1">Choose City</option>
+                                                <option value="2">City Name - 1</option>
+                                                <option value="3">City Name - 2</option>
+                                                <option value="4">City Name - 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <select name="adults-select" id="adults-select">
+                                                <option value="1">Adults</option>
+                                                <option value="2">Yes</option>
+                                                <option value="3">No</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="kids-select" id="kids-select">
+                                                <option value="1">Kids</option>
+                                                <option value="2">Kids - 1</option>
+                                                <option value="3">Kids - 2</option>
+                                                <option value="4">Kids - 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <select name="min-price-select" id="min-price-select">
+                                                <option value="1">Min Price</option>
+                                                <option value="2">$50</option>
+                                                <option value="3">$50</option>
+                                                <option value="4">$50</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="max-price-select" id="max-price-select">
+                                                <option value="1">Max Price</option>
+                                                <option value="2">$25</option>
+                                                <option value="3">$50</option>
+                                                <option value="4">$100</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="date-input-arrow"><input type="date" name="date"></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="date-input-arrow"><input type="date" name="date"></p>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="pink-btn">Find Hotels</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="profile">
+                            <div class="s-bottom-form">
+                                <form action="index.html" method="POST">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" id="hotel-name-input2" name="hotel-name2" placeholder="Hotel name here">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="city-select2" id="city-select2">
+                                                <option value="1">Choose City</option>
+                                                <option value="2">City Name - 1</option>
+                                                <option value="3">City Name - 2</option>
+                                                <option value="4">City Name - 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <select name="adults-select2" id="adults-select2">
+                                                <option value="1">Adults</option>
+                                                <option value="2">Yes</option>
+                                                <option value="3">No</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="kids-select2" id="kids-select2">
+                                                <option value="1">Kids</option>
+                                                <option value="2">Kids - 1</option>
+                                                <option value="3">Kids - 2</option>
+                                                <option value="4">Kids - 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <select name="min-price-select2" id="min-price-select2">
+                                                <option value="1">Min Price</option>
+                                                <option value="2">$50</option>
+                                                <option value="3">$50</option>
+                                                <option value="4">$50</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="max-price-select2" id="max-price-select2">
+                                                <option value="1">Max Price</option>
+                                                <option value="2">$25</option>
+                                                <option value="3">$50</option>
+                                                <option value="4">$100</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="date-input-arrow"><input type="date" name="date"></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="date-input-arrow"><input type="date" name="date"></p>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="pink-btn">Find Tours</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="messages">
+                            <div class="s-bottom-form">
+                                <form action="index.html">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" id="hotel-name-input3" name="hotel-name3" placeholder="Hotel name here">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="city-select3" id="city-select3">
+                                                <option value="1">Choose City</option>
+                                                <option value="2">City Name - 1</option>
+                                                <option value="3">City Name - 2</option>
+                                                <option value="4">City Name - 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <select name="adults-select3" id="adults-select3">
+                                                <option value="1">Adults</option>
+                                                <option value="2">Yes</option>
+                                                <option value="3">No</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="kids-select3" id="kids-select3">
+                                                <option value="1">Kids</option>
+                                                <option value="2">Kids - 1</option>
+                                                <option value="3">Kids - 2</option>
+                                                <option value="4">Kids - 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <select name="min-price-select3" id="min-price-select3">
+                                                <option value="1">Min Price</option>
+                                                <option value="2">$50</option>
+                                                <option value="3">$50</option>
+                                                <option value="4">$50</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="max-price-select3" id="max-price-select3">
+                                                <option value="1">Max Price</option>
+                                                <option value="2">$25</option>
+                                                <option value="3">$50</option>
+                                                <option value="4">$100</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="date-input-arrow"><input type="date" name="date"></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="date-input-arrow"><input type="date" name="date"></p>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="pink-btn">Find Cars</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="settings">
+                            <div class="s-bottom-form">
+                                <form action="index.html">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" id="hotel-name-input4" name="hotel-name4" placeholder="Hotel name here">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="city-select4" id="city-select4">
+                                                <option value="1">Choose City</option>
+                                                <option value="2">City Name - 1</option>
+                                                <option value="3">City Name - 2</option>
+                                                <option value="4">City Name - 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <select name="adults-select4" id="adults-select4">
+                                                <option value="1">Adults</option>
+                                                <option value="2">Yes</option>
+                                                <option value="3">No</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="kids-select4" id="kids-select4">
+                                                <option value="1">Kids</option>
+                                                <option value="2">Kids - 1</option>
+                                                <option value="3">Kids - 2</option>
+                                                <option value="4">Kids - 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <select name="min-price-selec4t" id="min-price-select4">
+                                                <option value="1">Min Price</option>
+                                                <option value="2">$50</option>
+                                                <option value="3">$50</option>
+                                                <option value="4">$50</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select name="max-price-select4" id="max-price-select4">
+                                                <option value="1">Max Price</option>
+                                                <option value="2">$25</option>
+                                                <option value="3">$50</option>
+                                                <option value="4">$100</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="date-input-arrow"><input type="date" name="date"></p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="date-input-arrow"><input type="date" name="date"></p>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="pink-btn">Find Flights</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="slider-bottom-gallery-hp1 owl-carousel">
+                    <div class="slider-bottom-single-gallery" data-dot="<img src='../Content/img/slider-bottom-hp1-gallery1.jpg' alt=''>">
+                        <img src="~/Content/img/slider-bottom-hp1-gallery1.jpg" alt="">
+                    </div>
+                    <div class="slider-bottom-single-gallery" data-dot="<img src='../Content/img/slider-bottom-hp1-gallery2.jpg' alt=''>">
+                        <img src="~/Content/img/slider-bottom-hp1-gallery2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Action("TopDestination", "Home");
+
+@Html.Action("SectionSeaToursArea", "Home");
+
+@Html.Action("FooderPadder", "Home");
